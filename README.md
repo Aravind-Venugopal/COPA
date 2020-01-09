@@ -2,21 +2,12 @@
 Practicum project for the COPA team
 
 
-COPA Team
-~~~JOEY~~~
+COPA Practicum Team
+~~~~~~
 
-From Joey's branch
-
-
-FROM JOEY's BRANCH AGAIN
-
-COPA Practicum Team:
 Xingxuan Zhang
-
-test from XXZ
-
+Joey Li
+Mandy Gu
+Xianglu He
 John Elmer Loretizo
-
-from aravinds branch
-
-From Mandy
+Aravind Venugopal
