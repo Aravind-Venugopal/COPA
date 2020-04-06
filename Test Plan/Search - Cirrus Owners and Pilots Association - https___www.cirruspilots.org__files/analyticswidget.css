@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+.analytics-widget .filter { overflow: hidden; border-top: none !important; }
+
+/* data table */
+.analytics-widget .widget-table { clear: both; padding: 0px; margin: 0px; margin-top: 5px; border: none; border-collapse: collapse; width: 100%; }
+.analytics-widget .widget-table td, .widget-table th { padding: 3px; text-align: center; }
+.analytics-widget .widget-table td { vertical-align: top; border-top: 1px solid #eee; }
+.analytics-widget .widget-table th { vertical-align: bottom; }
+.analytics-widget .widget-table th { font-weight: normal; font-size: .8em; text-transform: uppercase; color: #777; }
+.analytics-widget .widget-table tr:hover td { background-color: #f1f1f1; }
+.analytics-widget .descriptor { text-align: left !important; }
+.analytics-widget tr.inverse td { background-color: #f6f6f6; }
+
+/* sorting */
+.analytics-widget .column-sort { display: inline-block; padding: 0px 12px; color: #777 !important; font-weight: normal !important; }
+.analytics-widget .descriptor .column-sort { padding-left: 0px; }
+.analytics-widget .column-sort:hover, .column-sort.sort-down { background: url('https://www.cirruspilots.org/cfs-filesystemfile.ashx/__key/themefiles/s-998320880be54a2a88d394ee0abedc9f-files/sortarrow.png') no-repeat right bottom; }
+.analytics-widget .column-sort.sort-down:hover { background-position-y: top; }
+.analytics-widget .column-sort.sort-up { background: url('https://www.cirruspilots.org/cfs-filesystemfile.ashx/__key/themefiles/s-998320880be54a2a88d394ee0abedc9f-files/sortarrow.png') no-repeat right top; }
+.analytics-widget .column-sort.sort-up:hover { background-position-y: bottom; }
+
+/* paging */
+.analytics-widget .pager.analytics-paging { text-align: left; margin-top: 10px; border-top: none !important; }
+.analytics-widget #fragment-105_container .pager.analytics-paging { margin-top: 20px; }
+.analytics-widget .pager.analytics-paging a.page { background: none; border: none; font-weight: normal !important; color: #999 !important; border-top: 1px solid #fff; }
+.analytics-widget .pager.analytics-paging a.page:hover { text-decoration: none; }
+.analytics-widget .pager.analytics-paging a.page.selected, .pager.analytics-paging a.page:hover { border-top: 1px solid #dbdbdb; }
+
+/* date picker */
+.analytics-widget .picker { text-align: right; color: #777; font-size: 8px; }
+.analytics-widget .date-wrapper { display: inline-block; white-space: nowrap; margin: 0px 5px 5px 0px; position: relative; }
+.analytics-widget .date-wrapper img { position: relative; top: 5px; }
+.analytics-widget .date-box { border: 1px solid #fff; border-radius: 4px; padding: 3px 3px 3px 3px; margin: 0px; width: 80px; box-sizing: border-box; -webkit-box-sizing: border-box; font-size: 10px; color: #777; background-color: transparent; }
+.analytics-widget .calendar-box { position: absolute; top: 21px; left: -81px; padding: 5px; background-color: #f1f1f1; box-shadow: 0px 4px 12px rgba(0,0,0,.2); border: 2px solid #dbdbdb; border-radius: 5px; z-index: 999; }
+.analytics-widget .to-spacer { text-transform: uppercase }
+.analytics-widget div.calendar-box.align-left { left: 0px; }
+.analytics-widget .calendar-table { padding: 0px; margin: 0px; border: 0px; border-collapse: collapse; }
+.analytics-widget .calendar-table td { font-size: 8pt; padding: 2px 4px; text-align: center; }
+.analytics-widget .calendar-table tr.date-row td { background-color: #fff; }
+.analytics-widget .calendar-table td a { font-weight: normal; }
+
+div.layout-region-inner.right-sidebar .analytics-widget .widget-table td, div.layout-region-inner.right-sidebar .analytics-widget .widget-table th { font-size: .9em; }
+
+.analytics-widget a.reset-link { display: inline-block; padding: 0px 4px; border: 1px solid #dbdbdb; color: #999 !important; background-color: #ff; border-radius: 5px; }
+.analytics-widget a.reset-link:hover { text-decoration: none !important; background-color: #ddf1fa; }
+
+/* error message */
+.analytics-widget div.message.norecords { padding: 0px; margin: 0px; background-color: transparent; border: none; color: #999; font-size: inherit; }
+.analytics-widget .date-invalid { background-color: #ffcccc; }
+
+/* charting */
+.analytics-widget .analytics-chart-block { margin: 10px auto 0px auto; max-width: 634px; }
+.analytics-widget .analytics-chart-block img { width: 100%; }
+.analytics-widget .chart-popup-wrapper { position: relative; width: 650px; z-index: 10000000000000; left: -500px; top: -50px; }
+.analytics-widget .chart-popup-inner { position: absolute; padding: 10px; background-color: #fff; border-radius: 10px; border: 2px solid #dbdbdb; box-shadow: 0px 4px 12px rgba(0,0,0,.2); }
+
+/* help */
+.analytics-widget .analytics-help-wrapper { position: relative; float: right; }
+.analytics-widget .analytics-help-wrapper, .analytics-help-content { border-bottom: none !important; }
+.analytics-widget .analytics-help-link { font-weight: normal !important; color: #777 !important; }
+.analytics-widget .analytics-help-content { position: absolute; width: 150px; top: -10px; z-index: 999; left: -150px; }
+.analytics-widget .analytics-help-content-inner { padding: 5px; background-color: #f1f1f1; box-shadow: 0px 4px 12px rgba(0,0,0,.2); border: 2px solid #dbdbdb; border-radius: 5px; color: #444; max-height: 150px; overflow-y: auto; font-size: 10px; }
+.analytics-widget .content-fragment-header div .analytics-help-content-inner { text-transform: none; font-weight: normal; }
+.analytics-widget .analytics-help-content-inner .help-topic { display: block; text-transform: uppercase; font-size: 10px; color: #777; }
+.analytics-widget .analytics-help-content-inner ul { list-style-type: none; margin: 10px 0px 0px 0px; padding: 0px;  }
+.analytics-widget .analytics-help-content-inner ul li { margin-bottom: 5px; }
+
+/* member tiles */
+.analytics-widget .member-tiles-wrapper { overflow: hidden; margin-top: 5px; }
+.analytics-widget .member-tile { float: left; width: 126px; }
+.analytics-widget .member-tile-inner { padding: 4px 0px 4px 4px; margin-right: 5px; margin-bottom: 5px; border-radius: 5px; background-color: #f1f1f1; overflow: hidden; box-sizing: border-box; }
+div.layout-region-inner.right-sidebar .analytics-widget .member-tile { width: 230px; }
+div.layout-region-inner.left-sidebar .analytics-widget .member-tile { width: 230px; }
+
+/*div.layout-region-inner.right-sidebar .analytics-widget  .member-tile-inner { max-height: 41px; padding: 2px 0px 2px 2px; }*/
+.analytics-widget .member-tile-table { padding: 0px; margin: 0px; border: 0px; border-collapse: collapse; }
+.analytics-widget .member-tile-table .member-call { white-space: nowrap; }
+.analytics-widget .member-tile-table .member-cell img { margin-right: 3px; }
+
+/* visibility */
+.analytics-widget .visibility-wrapper { position: relative; float: right; margin-right: 10px; }
+.analytics-widget .visibility-wrapper, .visibility-content { border-bottom: none !important; }
+.analytics-widget .visibility-link { display: inline-block; background: url('https://www.cirruspilots.org/cfs-filesystemfile.ashx/__key/themefiles/s-998320880be54a2a88d394ee0abedc9f-files/visibility.png') no-repeat center center; height: 9px; width: 11px; text-decoration: none !important; }
+.analytics-widget .visibility-content { position: absolute; width: 150px; top: -10px; z-index: 999; left: -150px; }
+.analytics-widget .visibility-content-inner { padding: 5px; background-color: #f1f1f1; box-shadow: 0px 4px 12px rgba(0,0,0,.2); border: 2px solid #dbdbdb; border-radius: 5px; color: #444; max-height: 150px; overflow-y: auto; font-size: 10px; }
+.analytics-widget .content-fragment-header div .visibility-content-inner { text-transform: none; font-weight: normal; }
+.analytics-widget .visibility-content-inner .help-topic { display: block; text-transform: uppercase; font-size: 10px; color: #777; }
+.analytics-widget .visibility-content-inner ul { margin: 10px 0px 0px 0px; padding-left: 15px; }
+.analytics-widget .visibility-content-inner ul li { margin-bottom: 5px; }
+
+/* big numbers */
+.analytics-widget .big-number-block { overflow: hidden; margin-top: 15px; }
+.analytics-widget .big-number-wrapper { margin-bottom: 10px; }
+.analytics-widget .big-number-wrapper * { line-height: 1.1em; }
+.analytics-widget .big-number-left, .big-number-right { float: left; }
+.analytics-widget .big-number-right { margin-right: 20px; }
+.analytics-widget .big-number-label { font-size: 9px; color: #bbb; text-transform: uppercase; margin-bottom: 5px; }
+.analytics-widget .sub-label {  font-size: 9px; }
+.analytics-widget .big-number-inner { display: inline-block; border: 1px solid #eee; border-radius: 7px; background-color: #f6f6f6; overflow: hidden; font-size: 26pt; color: #999; padding: 5px; }
+.analytics-widget .subset { background-color: #fff; }
+.analytics-widget .subset-table {  padding: 0px 5px; display: block; border-color: #fff; }
+.analytics-widget .big-number-attachment { font-size: 20pt; color: #bbb; }
+
+.analytics-widget .big-number-table { border: 0px; border-collapse: collapse; margin: 0px; padding: 0px;width: auto; }
+.analytics-widget .big-number-table td { padding: 1px 3px; }
+.analytics-widget .big-number-table td .big-number-label { font-size: 6pt; }
+.analytics-widget .big-number-table td.values { font-size: 12pt !important; color: #999; text-align: right; }
+.analytics-widget .sub-value { font-size: 9pt !important; color: #999; text-align: right; }
+.analytics-widget .big-number-table td .big-number-attachment { font-size: 10pt; }
+
+.analytics-widget .big-number-divider { clear: left; height: 1px; background-color: #dbdbdb; margin: 15px 0px 0px 0px ; }

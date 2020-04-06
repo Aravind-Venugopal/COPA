@@ -1,0 +1,51 @@
+acebook. Odds are you know what that is and most likely have an account. As of March 2014 there were 1.3 billion active monthly Facebook users. To put that in perspective: there are more Facebook users than there are Catholics.
+
+Today, with the help of Radiolab’s The Trust Engineers podcast, we’re going to discuss the link between technology and emotion and the problems that sometimes occur when one of every seven people on the planet are trying to connect across time and geography.
+
+In this podcast, Facebook’s Director of Engineering, Arturo Bejar, tells that in the few days between Christmas and New Year’s Day in 2011, more photos were uploaded to Facebook than the entirety of photos on Flickr. With this influx of photos, the influx of “reports” also went up. In 2011, if you saw something that upset you, you could click a button and tell Facebook to take it down. This was because Facebook didn’t want things like nudity, drug use and hate speech showing up in new feeds.
+
+So the good people of Facebook get back from their holiday only to find millions of photo reports. They would have needed thousands of people to review all these. Before they dug in, Arturo decided to see what they were dealing with. What they found were images that were vastly different from what they were actually flagged for. Moms holding babies, families in matching Christmas sweaters reported as nudity. Pictures of puppies reported as hate speech.
+
+They investigated further by asking people why they didn’t like they picture or why they reported it. They found that most of the people who reported images were in the images themselves. They didn’t like the way they looked or didn’t like that it was posted.
+
+Suddenly human drama – not illegal activity, hate speech or nudity – was fueling millions of reports. They were selecting whatever option they could just to get to the next step and submit the report. I can unfortunately say, I’m guilty of this. Maybe not in that time frame – but yeah, I’ve done it (and have now upped my timeline privacy so I have to approve things before they show up on my timeline. That may not have been an option in 2011.).
+
+So Facebook added a step to this process. Some people would see a little box on the screen that asked how the photo made them feel. Alas, you can mix technology and human emotion. This is where the story really gets interesting to me. The answer box gave several options: embarrassing, saddening, upsetting, bad photo and other, where people could write in what they wanted about the image.
+
+Of the 34% of people who would select “other,” the most common response was, “It’s embarrassing” even though Facebook had that on the list. Okaaaaaay. So then, they wrote out the option answers as “It’s embarrassing,” “It’s saddening,” etc. With this one word, they went from only 50% of people selecting an emotion to 78% of people selecting an emotion. The word “it’s” boosted the response of thousands upon thousands of people. This is due to the fact that without a subject – “it’s” – the subject is the person submitting the report. They are embarrassing. With “it’s” in place, the emotional energy shifts to the photo in question. It’s subtle, but grammar is now rearing its head and is in the mix with human emotion and technology. “I’m fine. It’s embarrassing.”
+
+Yet, even with all this fascinating data, Facebook couldn’t actually do anything. You cannot make someone take an image down just because someone else finds it embarrassing. So their basic problem wasn’t solved. Facebook was now in the middle of what could have more easily been handled by the two individuals in question.
+
+So Arturo made a tweak: If you said the photo was embarrassing, a new box would pop up and ask, “Do you want your friend to take the photo down?” If you said yes, you were rewarded with an empty message box. Only 20% of people would do this.
+
+Next, they added a default message: “Hey, I didn’t like this photo. Take it down.” Aggressive, right? But when they started doing this, they went from 20% of people sending a message to 50% of people sending a message.
+
+That worked so well, they decided to experiment with several other phrases: “Hey Candace, I didn’t like this photo. Take it down.” Adding in the person’s name worked about 7% better than not using their name.
+
+They used variations like “Would you please…” and “Would you mind….” In this scenario, “Would you please…” performed 4% better than “Would you mind…”
+
+They even tried messages incorporating the word “sorry” and found that it doesn’t help. Like, at all. Apologizing seems to shift the responsibility back to the complainers.
+
+Enter “The Trust Engineers!” Every Friday on the Facebook campus, Arturo assembles a big group to review the data. Data scientists, engineers and the many self-proclaimed trust engineers. They are also joined by outside scientists.
+
+Now, to my favorite part – in most cases, these outside scientists – whether they study the effects of happiness or neuroscience – are awestruck at the sheer amount of information available – and from all demographics. They are accustomed to having around 20 people to draw information and conclusions from. “Facebook has created a laboratory of human behavior the likes of which we’ve never seen.” This new boon of information could be the future of social science. “There has never been a human community like this in human history.”
+
+The statistical likelihood that you, the person reading this, have been a guinea pig in one of their experiments? 100%. When you look at the data, any given person is probably involved in 10 different experiments and have been exposed to 10 different experimental things.
+
+Due to the nature of my job, I don’t really feel as violated by the above paragraph (of course, I don’t post a lot of personal info) as many people in the general public did. Shortly after Radiolab had this discussion with Facebook, an academic paper was published about Facebook tinkering with about 700,000 people and the media ran with it. It blew up for a hot second.
+
+I see people putting SO much of their lives out for all the world to see so I don’t see how people can suddenly be irate about this. In my mind this is no different than having a Red Card for Target or an Extra Care Rewards Card at CVS. When you checkout at these stores, you get a slew of coupons based on things you purchase or they think you might be interested in. People can’t be so naive as to think the forum/company in which they’re putting so much personal information isn’t going to look at all of it, right? Wrong. Though, the real issue, according to Kate Crawford, a Principal Researcher at Microsoft Research, a Visiting Professor at the MIT Center for Civic Media, a Senior Fellow at NYU’s Information Law Institute, and an Associate Professor at the University of New South Wales, was that people felt a real sense of betrayal and that they weren’t aware that this space of theirs was being treated in these ways and that they were part of this psychological experimentation.
+
+But this “psychological experimentation” is not necessarily as evil as it sounds. On election day, you usually see an “I Voted” button at the top of your feed. You can also see other friends who have voted. If you click it you are added to the pool of people who voted. This is another Facebook experiment; they wanted to see if they could increase voter turnout. Indeed they did, by 2%. Two percent may not sound like a lot, but it equals out to 340,000 voters who voted who normally would not have.
+
+Where it starts to get a little hairy, is when candidates want to push the “Go Vote!” propaganda to only a select demographic, i.e. those more likely to vote for them. Whereas the people who wouldn’t vote for them don’t get these little nudges.
+
+Per Kate, when it comes to social engineering, companies need to be really careful.
+
+But per Arturo at Facebook, in the work they were doing, it all began with people asking them for help. Facebook wasn’t doing this for fun. People had asked for help and they were finding a solution.
+
+When you try to engineer trust offline, you do it in subtle ways – eye contact, facial expressions, posture, tone – but when you go online, you don’t have any of that. In that absence of that feedback we’re left with the question of what communication turns into. Arturo says his goal is merely to help close the gap between what it’s like to communicate off and on line.
+
+In my job at OU I always tell people social media is a day-to-day experiment. Not on the same scale as Facebook, but an experiment just the same – especially in the beginning when I started working here. You have to learn your target audience and who is on each network. What do they respond to? What do they ignore? What really irritates them? What engages them? What makes them feel connected to campus? It’s not a manipulation for me so much as it’s a way to reach as many people as possible in a way that will appeal to them, all the while continuing to build our brand. I can’t reformat Facebook but I can take great care with the message, images, content, etc. When something tanks, I make a note. When something does well, I make a note. And this, essentially, is how I’ve built and continue to build the formula for success at OU.
+
+As someone who actively studies people on social media on a daily basis, I love that Facebook has so much information. I use it as a way to build content that suits them as a whole. As an individual, my career has made me much more private. I’m leery of putting much of my life in such a public place and relish enjoying my personal life privately offline vs virtually. I thoroughly enjoyed listening to this podcast and I hope you enjoy it as well. Feel free to let me know what you think!
