@@ -1,0 +1,474 @@
+,search string,level_1,id
+0,brakes during taxi,0,/t/cirrus-sr22-brake-problems/41040/5
+1,brakes during taxi,1,/t/cirrus-sr22-brake-wear/65942/2
+2,brakes during taxi,2,/t/overheated-failed-brakes/25175/7
+3,brakes during taxi,3,/t/brake-fire/68466
+4,brakes during taxi,4,/t/brake-failure-and-fire/26578
+5,brakes during taxi,5,/t/brake-temp-cas/58747
+6,brakes during taxi,6,/t/wheel-pant-vents-for-overheating-brakes/28456/8
+7,brakes during taxi,7,/t/brake-failure/38890
+8,brakes during taxi,8,/t/brakes-black-dot/33927/10
+9,brakes during taxi,9,/t/2015-cppp-schedule/75517/18
+10,brakes during taxi,10,/t/strange-problem/29125/2
+11,brakes during taxi,11,/t/brake-temp-indicators/29982/4
+12,brakes during taxi,12,/t/100-hour-owner-observations/62891
+13,brakes during taxi,13,/t/my-brake-inspection/26630
+14,brakes during taxi,14,/t/cirrus-prop-strike-question/64251/30
+15,brakes during taxi,15,/t/overtemp-brakes-how-common-how-costly/63061/4
+16,brakes during taxi,16,/t/brake-failures/12179
+17,brakes during taxi,17,/t/stop-brakes-thoughts/65778/29
+18,brakes during taxi,18,/t/smokin-tires/84614/14
+19,brakes during taxi,19,/t/burned-up-brakes/62677
+20,brakes during taxi,20,/t/beringer-brakes/81296/8
+21,brakes during taxi,21,/t/brake-fire-or-wheel-pant-fire/26606
+22,brakes during taxi,22,/t/trouble-with-brakes/25382
+23,brakes during taxi,23,/t/braking-technique-owt/31425
+24,brakes during taxi,24,/t/we-are-not-done-with-reaching-all-cirrus-pilots-cirrus-brake-fire-accident-at-houston-in-2013/74431
+25,brakes during taxi,25,/t/brake-pads-life-wear-and-tbo-number-of-landings-and-hours-flown/74611/3
+26,brakes during taxi,26,/t/taxiing-an-sr20/16274/2
+27,brakes during taxi,27,/t/cirrus-sr-22-brakes/24714/7
+28,brakes during taxi,28,/t/sr22-g1/67943/11
+29,brakes during taxi,29,/t/c-182-to-sr-22/26410/43
+30,brakes during taxi,30,/t/has-any-of-these-things-happened-to-you/18180
+31,brakes during taxi,31,/t/brake-upgrade-for-sr20/30128/2
+32,brakes during taxi,32,/t/final-ntsb-report-on-brake-fire/30656
+33,brakes during taxi,33,/t/crazy-trip-across-the-desert-today-long/58402/12
+34,brakes during taxi,34,/t/sr22-brakes/92794/2
+35,brakes during taxi,35,/t/cirrus-non-fatal-accident-before-takeoff-in-sr20-n552pg-at-deer-valley-az-17-june-2012/67666
+36,brakes during taxi,36,/t/beringer-brake-heat-dissipation/80665/10
+37,brakes during taxi,37,/t/3-aborted-take-offs-brake-overheating/84509/6
+38,brakes during taxi,38,/t/sr22-damaged-by-brake-fire-at-kpit-24-january-2011/57129/2
+39,brakes during taxi,39,/t/brake-question/22207/4
+40,brakes during taxi,40,/t/brake-overtemp/61749/15
+41,brakes during taxi,41,/t/the-mother-of-all-flat-spots/74792/13
+42,brakes during taxi,42,/t/yet-another-stupid-pilot-trick/33862
+43,brakes during taxi,43,/t/brakes/20833
+44,brakes during taxi,44,/t/leg-amputation/77460/4
+45,brakes during taxi,45,/t/why-we-do-post-maintenance-checks-brakes-nearly-inop/89293
+46,brakes during taxi,46,/t/new-sb-for-shimmy-with-beringer-wheels/87591/9
+47,brakes during taxi,47,/t/cirrus-caught-fire/24631/5
+48,brakes during taxi,48,/t/weather-minima-for-departure-after-annual/84901/9
+49,brakes during taxi,49,/t/i-suggest-that-everyone-try-this/26583/5
+50,capture glide slope above,0,/t/dfc-90-glide-slope-capture-from-above/76367
+51,capture glide slope above,1,/t/how-best-to-capture-glide-slope-with-autopilot-when-well-above-the-glide-slope/50067
+52,capture glide slope above,2,/t/capturing-the-glide-slope/98624
+53,capture glide slope above,3,/t/autopilot-questions/75072/7
+54,capture glide slope above,4,/t/autopilot-did-not-capture-gs/83704/14
+55,capture glide slope above,5,/t/ils-vectors-to-final-cleared-to-join-localizer-above-gs/98339
+56,capture glide slope above,6,/t/dfc90-pilot-error-software-glitch/77309/7
+57,capture glide slope above,7,/t/dfc90-button-pushing/55943/19
+58,capture glide slope above,8,/t/flap-deployment-with-dfc-90/73890/9
+59,capture glide slope above,9,/t/ils-to-minimums-failure-to-capture-glideslope/94287/10
+60,capture glide slope above,10,/t/in-ils-we-trust-nz60-incident/76692/23
+61,capture glide slope above,11,/t/dfc-90-newbie-tricks-to-confuse-my-new-friend/55788
+62,capture glide slope above,12,/t/just-passed-instrument-check-ride/53464/28
+63,capture glide slope above,13,/t/coupled-approach/18980/4
+64,capture glide slope above,14,/t/dfc-90-above-the-glideslope/60942/7
+65,capture glide slope above,15,/t/gpss/15160/21
+66,capture glide slope above,16,/t/where-o-where-has-my-localizer-gone/44886
+67,capture glide slope above,17,/t/lpv-approach-with-step-down-fixes/95955/2
+68,capture glide slope above,18,/t/stabilised-approach/90601/3
+69,capture glide slope above,19,/t/green-world/98638
+70,capture glide slope above,20,/t/suggestions-for-a-new-instument-pilot-long/18072
+71,capture glide slope above,21,/t/6-000-for-5-000-or-4-000/93321/3
+72,capture glide slope above,22,/t/dfc90-looking-for-feedback/59516/43
+73,capture glide slope above,23,/t/ils-rwy-8-into-klns-questions/79732/19
+74,capture glide slope above,24,/t/cant-capure-gs/35721/3
+75,capture glide slope above,25,/t/the-cirrus-is-hard-to-slow-down-not/47539
+76,capture glide slope above,26,/t/dfc-100-review-from-a-ups-767-captain/56019
+77,capture glide slope above,27,/t/re-6-pack-waas-install/11221
+78,capture glide slope above,28,/t/ifr-pilot-final-approach-question/66246/27
+79,capture glide slope above,29,/t/procedure-for-alt-bug-on-glideslope-approach/57336/4
+80,capture glide slope above,30,/t/s-tec/18996/3
+81,capture glide slope above,31,/t/need-advice-with-using-the-avidyne-ifd-440s-for-approaches/94612/10
+82,capture glide slope above,32,/t/not-a-pretty-picture/45850/15
+83,capture glide slope above,33,/t/autopilot-flying-an-ils/26523/3
+84,capture glide slope above,34,/t/approach-minimum-altitude/98178/10
+85,capture glide slope above,35,/t/ils-approach-gns430/76967/11
+86,capture glide slope above,36,/t/stec55x-glideslope-capture/90801/16
+87,capture glide slope above,37,/t/porpoising-on-ils/82885/5
+88,capture glide slope above,38,/t/glide-slope-intercept/88920/4
+89,capture glide slope above,39,/t/glide-sope-flag/17743
+90,capture glide slope above,40,/t/jetblue-pilot-aids-struggling-cirrus-pilot/89298/35
+91,capture glide slope above,41,/t/weekend-update/18760/4
+92,capture glide slope above,42,/t/coupled-lpv-and-ils-approaches/90187/21
+93,capture glide slope above,43,/t/flying-ap-coupled-approaches-with-the-55x-and-430ws-inc-waas/35885/44
+94,capture glide slope above,44,/t/first-time-to-chino-kcno/73979/7
+95,capture glide slope above,45,/t/autopilot/49708
+96,capture glide slope above,46,/t/ils-autopilot-operation/21459/3
+97,capture glide slope above,47,/t/alt-sel-bug-came-off-mid-flight/83308/19
+98,capture glide slope above,48,/t/my-friends-sisters-uncle-de-avidyne-the-mfd-pfd/84875/60
+99,capture glide slope above,49,/t/ifd-550-dc90-gs-invalid/99333
+100,find flight instructor,0,/t/vny-viability-as-a-cppp-site/88832/23
+101,find flight instructor,1,/t/stall-spin-query/35683/37
+102,find flight instructor,2,/t/cirrus-fatal-119-in-sr22-ec-kjo-near-madrid-cuatro-vientos-spain-5-july-2016/82881/12
+103,find flight instructor,3,/t/breaking-news-post-fiki-release/46330/2
+104,find flight instructor,4,/t/nos-binders/20358/2
+105,find flight instructor,5,/t/looking-for-a-flight-instructor-in-mn/64840/3
+106,find flight instructor,6,/t/orlando-bahamas/94664/2
+107,find flight instructor,7,/t/instrument-training-from-written-to-practical-instruction-to-ifr-rating/99894/11
+108,find flight instructor,8,/t/in-a-rut-scared-to-fly/31965/3
+109,find flight instructor,9,/t/my-solo-gopro-vid/71555/15
+110,find flight instructor,10,/t/perspective-pc-trainer-version-9-10-now-available/48352/22
+111,find flight instructor,11,/t/ground-leaning/17142/23
+112,find flight instructor,12,/t/efb-causing-too-many-distractions/80879/4
+113,find flight instructor,13,/t/young-instructors-cant-keep-their-cell-phone-in-the-pocket/50176/6
+114,find flight instructor,14,/t/if-i-ran-cirrus/24212/16
+115,find flight instructor,15,/t/flight-training-at-dlh/15946/19
+116,find flight instructor,16,/t/is-becoming-a-certified-flight-instructor-worthwhile/46505/2
+117,find flight instructor,17,/t/power-settings-leaning/56375/6
+118,find flight instructor,18,/t/high-altitude-take-off/7104/21
+119,find flight instructor,19,/t/tipping-instructors/18816/30
+120,find flight instructor,20,/t/question-for-flight-instructors-training-kids/77099/9
+121,find flight instructor,21,/t/flight-schools-with-sr20-in-ca/39945
+122,find flight instructor,22,/t/mfd-fuel-quantity-glitch-anyone-seen-this-one/35109/7
+123,find flight instructor,23,/t/flight-instructor/16230
+124,find flight instructor,24,/t/n171sr-kind-of-banged-up/34528/26
+125,find flight instructor,25,/t/formation-to-2012-oshkosh/59547/35
+126,find flight instructor,26,/t/cirrus-fatal-94-in-sr22-n308pj-near-gary-in-on-3-oct-2012-possible-sr22-down-at-gyy/65062/213
+127,find flight instructor,27,/t/poison/84883/59
+128,find flight instructor,28,/t/anyone-utilize-pilotworkshops-com/68687/3
+129,find flight instructor,29,/t/hello-copa-complete-newbie-with-a-few-questions/56370/23
+130,find flight instructor,30,/t/quite-a-workout-today-flying-with-alex/65334/30
+131,find flight instructor,31,/t/learning-to-fly-in-a-cirrus/75064/16
+132,find flight instructor,32,/t/long-cross-country-ifr-vs-vfr/45159/2
+133,find flight instructor,33,/t/additional-information-pilot-proficiiency-pgm/15190/4
+134,find flight instructor,34,/t/additional-information-pilot-proficiency-program/39422
+135,find flight instructor,35,/t/atp-vs-american-flyers-vs-others/89145
+136,find flight instructor,36,/t/looking-for-dedicated-intesnsive-sr22-ira-training/45357/3
+137,find flight instructor,37,/t/180-per-hour-cfi/9521/9
+138,find flight instructor,38,/t/cirrus-flight-training-out-of-santa-monica-ksmo-need-the-boards-help/70064/2
+139,find flight instructor,39,/t/comparing-cirrus-to-ga-fleet-safety-by-year/57079/69
+140,find flight instructor,40,/t/arrangements-with-instructors/15755/3
+141,find flight instructor,41,/t/wasnt-this-part-of-our-ppl-lessons/31010/5
+142,find flight instructor,42,/t/cirrus-training-akin-to-flight-safety-international/83576/3
+143,find flight instructor,43,/t/icing-behavior-learning-and-seduction/32646
+144,find flight instructor,44,/t/light-a-c-crash-into-nyc-building/31892/92
+145,find flight instructor,45,/t/looking-for-csip-instructor-in-the-ksat-area/76740/3
+146,find flight instructor,46,/t/new-insurance-requirements/50813/5
+147,find flight instructor,47,/t/notebook-notepad/17546/13
+148,find flight instructor,48,/t/being-on-the-ground-to-long/71587/9
+149,find flight instructor,49,/t/ntsb-probable-cause-for-satsair-off-airport-landing-at-northport-fl-3-april-2009/57411/31
+150,oxygen altitude,0,/t/preparing-for-use-of-oxygen-high-altitude-flying/63415
+151,oxygen altitude,1,/t/altitude-and-oxygen/34007
+152,oxygen altitude,2,/t/oxygen-and-sr20-high-altitude-performance/15455
+153,oxygen altitude,3,/t/oxygen-utilization-and-your-favorite-altitude/49354
+154,oxygen altitude,4,/t/sr22-g5-ifr-flight-plan-not-turbo-or-no-oxygen-and-13-000-ft-altitude/89329
+155,oxygen altitude,5,/t/an-experiment-on-oxygen-use-and-altitude/24193
+156,oxygen altitude,6,/t/going-direct-over-the-mountains-how-to-determine-best-altitude/26350
+157,oxygen altitude,7,/t/fun-trip-in-supercharger/49474/10
+158,oxygen altitude,8,/t/how-fast-is-your-sr22-anonymous-survey/77200/9
+159,oxygen altitude,9,/t/oregon-to-nebraska-pirep/82299/11
+160,oxygen altitude,10,/t/cirrus-g5-sr22-to-piper-m500/96152/40
+161,oxygen altitude,11,/t/tn22-versus-sr22/32437/41
+162,oxygen altitude,12,/t/o2-or-not-o2/17000/5
+163,oxygen altitude,13,/t/hypoxia/60574/5
+164,oxygen altitude,14,/t/look-what-tat-did-to-the-cardinal/47693/35
+165,oxygen altitude,15,/t/precise-flight-boom-cannula-question/88304
+166,oxygen altitude,16,/t/acr-406-why-use-external-gps/31501/21
+167,oxygen altitude,17,/t/cannula-irritation/94157/3
+168,oxygen altitude,18,/t/sr22-or-turbo/41277
+169,oxygen altitude,19,/t/dog-crate-for-baggage-area/79454/3
+170,oxygen altitude,20,/t/class-b-atc-notification-of-leaving-and-entering-change/62171/3
+171,oxygen altitude,21,/t/cirrus-oxygen-pirep/19664/16
+172,oxygen altitude,22,/t/skylane-owner-seeking-feedback-on-sr22/39898/16
+173,oxygen altitude,23,/t/routing-southern-california-to-mammoth-lakes/21155/4
+174,oxygen altitude,24,/t/precise-flight-oxygen/27623/8
+175,oxygen altitude,25,/t/ifr-route-from-mn-to-az/96256/5
+176,oxygen altitude,26,/t/sr22-hypoxia-66-year-old-fl250-o2d2/58903/14
+177,oxygen altitude,27,/t/cirrus-fatal-105-in-sr22t-n930rh-in-atlantic-ocean-near-washington-dc-30-august-2014-was-possible-cirrus-incident-reported-on-pilots-of-america-website/74310/54
+178,oxygen altitude,28,/t/sr22-real-life-fuel-consumption/39903
+179,oxygen altitude,29,/t/eclipse-costs/28414/13
+180,oxygen altitude,30,/t/continuous-pilot-oxygen-saturation-monitoring-time-for-action/48990
+181,oxygen altitude,31,/t/canada-to-san-diego-help/33851/11
+182,oxygen altitude,32,/t/trip-to-phoenix/18464/2
+183,oxygen altitude,33,/t/oxygen-poh-limitation/8566
+184,oxygen altitude,34,/t/fat-supercharger-gets-faa-approval/45933/41
+185,oxygen altitude,35,/t/turbo-worth-it/82660
+186,oxygen altitude,36,/t/pirep-flew-the-da-62-today/81727/28
+187,oxygen altitude,37,/t/cruise-performance/26256/2
+188,oxygen altitude,38,/t/elevated-heartbeat/53372
+189,oxygen altitude,39,/t/just-test-flew-a-diesel-equipped-172/85217/54
+190,oxygen altitude,40,/t/oxygen-where-to-fill/15663/3
+191,oxygen altitude,41,/t/flying-in-the-flight-levels/99041/7
+192,oxygen altitude,42,/t/caribbean-flight-ops-tips-tricks/80317/6
+193,oxygen altitude,43,/t/an-unplanned-race-between-a-na-and-a-t/83288/7
+194,oxygen altitude,44,/t/vfr-on-top-question/58424/6
+195,oxygen altitude,45,/t/demod-the-mustang/83725/112
+196,oxygen altitude,46,/t/ozone-concentration-limiting/89149/4
+197,oxygen altitude,47,/t/low-teens-hypoxia/97510
+198,oxygen altitude,48,/t/route-advice-san-francisco-bay-area-to-denver/10663/2
+199,oxygen altitude,49,/t/inogen-aviator-supplemental-oxygen-without-a-tank/59280
+200,stall under hood,0,/t/csip-insurance-requirement/64358/15
+201,stall under hood,1,/t/what-to-do-with-the-caps-pin/24005/20
+202,stall under hood,2,/t/wow-i-would-never-do-this-and-neither-would-you/74375/34
+203,stall under hood,3,/t/deep-stalls/28488/42
+204,stall under hood,4,/t/stall-spin-video-in-a-jet-prop/76283/3
+205,stall under hood,5,/t/student-pilots-who-are-you-and-where-are-you-at-in-your-training/81475/73
+206,stall under hood,6,/t/cirrus-sf50-jet-certification-moves-to-the-right/80821/56
+207,stall under hood,7,/t/upgrading-to-a-mustang/67062/38
+208,stall under hood,8,/t/final-aps-class-pirep/31691/4
+209,stall under hood,9,/t/tbm-down-klan-10-3/98255/15
+210,stall under hood,10,/t/bought-a-mustang-path-to-training/83565/21
+211,stall under hood,11,/t/the-ultimate-distraction-or-a-scene-from-the-exorcist-on-final/20755/28
+212,stall under hood,12,/t/u-tube-video-of-the-overhead-approach/59351/14
+213,stall under hood,13,/t/instrument-training-with-the-flight-academy-take-2/82395
+214,stall under hood,14,/t/coffin-corners/24327
+215,stall under hood,15,/t/flight-safety-for-cirrus/52043
+216,stall under hood,16,/t/piper-lowers-prices-on-m-models/81582/79
+217,stall under hood,17,/t/pilots-deadly-private-plane-crashes-prompt-u-s-call-for-basics/63659/7
+218,stall under hood,18,/t/are-there-new-pilots/67553/28
+219,stall under hood,19,/t/cirrus-fatal-96-in-sr22-f-htav-near-aix-les-milles-in-france-11-may-2013/68004/44
+220,stall under hood,20,/t/epic-crash-at-spruce-creek/85010/4
+221,stall under hood,21,/t/how-long-was-your-annual-proficiency-training/34753/8
+222,stall under hood,22,/t/dissing-the-turn-coordinator/19459
+223,stall under hood,23,/t/would-you-still-pull-caps-in-case-of-en-engine-fire/59192/142
+224,stall under hood,24,/t/the-atp-practical-test/74581/11
+225,stall under hood,25,/t/how-useful-is-stall-practice/96551/28
+226,stall under hood,26,/t/bi-annual-flight-review-today/84580/61
+227,stall under hood,27,/t/sr20-g2-stec55x-autopilot/67277/20
+228,stall under hood,28,/t/final-thoughts/20071/10
+229,stall under hood,29,/t/buzzing-accidents/33768/35
+230,stall under hood,30,/t/unnecessary-risk-vs-training-safely/72266/34
+231,stall under hood,31,/t/unusual-attitude/98415/2
+232,stall under hood,32,/t/bonanza-crash-jul-26-2017-near-ogden-ut/87718/11
+233,stall under hood,33,/t/flying-sr22-home-after-prebuy/91470/7
+234,stall under hood,34,/t/cirrus-fatal-36-in-sr22-n141sr-near-front-royal-va/47270/106
+235,stall under hood,35,/t/f16-cessna-midair-collision/78168/76
+236,stall under hood,36,/t/my-ipc-with-murphy-long/75767
+237,stall under hood,37,/t/has-technology-made-us-soft/23834/12
+238,stall under hood,38,/t/cirrus-fatal-126-in-sr22-n462sr-near-glenwood-springs-co-15-sept-2017-was-sr22-down-in-colorado/88388/157
+239,stall under hood,39,/t/cirrus-mountain-flying/63392/50
+240,stall under hood,40,/t/turbine-lancair-down-in-georgia/80868/18
+241,stall under hood,41,/t/teaching-judgement/24249/15
+242,stall under hood,42,/t/base-to-final-in-the-practice-area/85428/11
+243,stall under hood,43,/t/mcu-failure/16171/7
+244,stall under hood,44,/t/the-best-legal-system-money-can-buy/48257/214
+245,stall under hood,45,/t/crazy-horse-stallion-51/19697/8
+246,stall under hood,46,/t/sr22tn-forced-landing-in-field-near-ogden-utah-7-14-17/87560/46
+247,stall under hood,47,/t/cirrus-fatal-93-in-sr22-n436ks-near-willard-mo-15-sept-2012-was-highway-patrol-identifies-5-people-killed-in-willard-plane-crash/64807/458
+248,stall under hood,48,/t/cirrus-fatal-accident-45-in-sr22-n224sb-near-moncks-corner-south-carolina/46552/120
+249,stall under hood,49,/t/cirrus-fatal-102-in-sr20-n406dc-near-bolingbrook-il-25-sept-2013-was-fatal-what-kind-of-plane/69848/227
+250,file nasa report,0,/t/nasa-reports-file-early-file-often/72702
+251,file nasa report,1,/t/should-i-file-a-nasa-report/85018
+252,file nasa report,2,/t/should-i-file-a-nasa-asrs-report/71679
+253,file nasa report,3,/t/busted-a-tfr/64731/4
+254,file nasa report,4,/t/nasa-report-you-might-have-more-than-10-days/62011
+255,file nasa report,5,/t/your-reaction-to-traffic-traffic/30509/45
+256,file nasa report,6,/t/delta-jet-runway-incursion/99528/5
+257,file nasa report,7,/t/tracking-my-aircraft-with-ads-b/91940/59
+258,file nasa report,8,/t/my-1st-nasa-report/89872
+259,file nasa report,9,/t/dont-make-a-dumb-mistake-dumber/93228
+260,file nasa report,10,/t/cross-20-miles-north-of-meads-10-000-feet/56800/157
+261,file nasa report,11,/t/close-call-at-midway/77919
+262,file nasa report,12,/t/attacked-by-helicopter-what-to-do-file-report/61584/2
+263,file nasa report,13,/t/need-ifr-pilot-favor/73182
+264,file nasa report,14,/t/two-nasa-reports-in-a-single-week/88833
+265,file nasa report,15,/t/boeing-737-max-8-down-in-ethiopia/95452/167
+266,file nasa report,16,/t/interesting-traffic-call-near-fresno-yesterday/52853/10
+267,file nasa report,17,/t/faa-announces-amnesty-program-for-far-violations/76995
+268,file nasa report,18,/t/possible-deviation-need-atc-recording/67493/11
+269,file nasa report,19,/t/small-incident-lesson-relearned/87125/2
+270,file nasa report,20,/t/near-mid-air-collision/75439/14
+271,file nasa report,21,/t/restricted-airspace-washington-dc-incident/72399/2
+272,file nasa report,22,/t/runway-incursion-kapa/51330/24
+273,file nasa report,23,/t/lessons-i-learned-in-48-hours/73190/87
+274,file nasa report,24,/t/suspension-how-long-for-an-expired-medical/74090/45
+275,file nasa report,25,/t/asrs/88651/2
+276,file nasa report,26,/t/question-on-flight-the-other-day/79982/16
+277,file nasa report,27,/t/checking-in-with-atc/66387/2
+278,file nasa report,28,/t/under-pressure-the-faa-folds-its-case/79689
+279,file nasa report,29,/t/another-tfr-bust/76574/3
+280,file nasa report,30,/t/night-imc-alternator-failure-long/80791/51
+281,file nasa report,31,/t/looking-for-advice-friend-declared-emergency-due-to-faulty-gear-indication/94375
+282,file nasa report,32,/t/super-bowl/66662/7
+283,file nasa report,33,/t/ifr-flight-today-what-a-lesson/68879/24
+284,file nasa report,34,/t/visual-approach-clearance-navigation-flexibility/56809/4
+285,file nasa report,35,/t/lights-on-anyone-home/60627/48
+286,file nasa report,36,/t/a-humbling-lesson-learned/61040/10
+287,file nasa report,37,/t/class-bravo-transitions/80219/4
+288,file nasa report,38,/t/my-dogfight-with-t6s-in-an-moa/98167/7
+289,file nasa report,39,/t/non-instrument-rated-pilot-flying-in-imc-conditions/93617/28
+290,file nasa report,40,/t/legal-problems/84782/6
+291,file nasa report,41,/t/what-would-you-do/76454/5
+292,file nasa report,42,/t/another-approach-question/55555/39
+293,file nasa report,43,/t/interesting-atc-request-on-departure-squawk-vfr/74485/23
+294,file nasa report,44,/t/altitude-bust/56544
+295,file nasa report,45,/t/9-avgas-ouch/52979/9
+296,file nasa report,46,/t/two-firsts/76396/7
+297,file nasa report,47,/t/accident-case-study-in-too-deep/66613/13
+298,file nasa report,48,/t/bonehead-needs-advice/33811/9
+299,file nasa report,49,/t/wrestled-with-atc-and-lost/83370/6
+300,loose fairing noise,0,/t/question-re-change-in-engine-sound-sr20-turbulence/76704/24
+301,loose fairing noise,1,/t/a-strange-noise/18351/4
+302,loose fairing noise,2,/t/thumping-noise-on-takeoff/20711/11
+303,loose fairing noise,3,/t/baffling-vibration-from-cowling-area-or-fairing/16798
+304,loose fairing noise,4,/t/strange-buzzing-noise/35792
+305,loose fairing noise,5,/t/rumble-that-scared-the-hell-out-of-me/24123/5
+306,loose fairing noise,6,/t/intermittent-vibration/34849/8
+307,loose fairing noise,7,/t/unusual-tire-problem/17132
+308,loose fairing noise,8,/t/new-odd-clicking-in-both-radios/96989/5
+309,loose fairing noise,9,/t/sr22-demo-purchase/19571/2
+310,loose fairing noise,10,/t/cirrus-technology-orphans-long/17413/3
+311,loose fairing noise,11,/t/can-a-loose-squelch-dial-on-audio-panel-give-unwanted-static/33728
+312,loose fairing noise,12,/t/another-cht-at-500/18593/2
+313,loose fairing noise,13,/t/problem-and-solution-for-mfd/34216
+314,loose fairing noise,14,/t/story-of-the-insidious-pfd-failure/18261/8
+315,loose fairing noise,15,/t/an-accident-story-well-worth-reading-fly-the-airplane-long/61575
+316,loose fairing noise,16,/t/an-accident-story-well-worth-reading-fly-the-airplane-long/61542
+317,loose fairing noise,17,/t/declared-my-first-emergency-after-1200-hours-of-flying-today/34937
+318,loose fairing noise,18,/t/whats-wrong-with-this-cirrus/24732/5
+319,loose fairing noise,19,/t/request-for-cirrus-feedback/19895/13
+320,loose fairing noise,20,/t/things-that-go-bump-in-the-flight-a-a-theory-long/24150
+321,loose fairing noise,21,/t/alt-1-anomalies/97814
+322,loose fairing noise,22,/t/is-this-for-real/47145/4
+323,loose seat belt,0,/t/loose-seat-belts-again/19044
+324,loose seat belt,1,/t/seat-discoloration-sb/22085/4
+325,loose seat belt,2,/t/technique-for-porta-potty-while-in-cirrus/58034/5
+326,loose seat belt,3,/t/secure-seat-belts/18394/11
+327,loose seat belt,4,/t/observing-a-lawsuit-arising-from-tallahassee-fatal-cirrus-accident/63020/31
+328,loose seat belt,5,/t/buckling-in-a-car-seat/75576/4
+329,loose seat belt,6,/t/car-seats-for-kids/16361/2
+330,loose seat belt,7,/t/dual-inertia-seat-lap-belt-sb/24518
+331,loose seat belt,8,/t/seatbelts/24135/5
+332,loose seat belt,9,/t/cabin-temperature/17832/10
+333,loose seat belt,10,/t/dual-reel-seat-belts-theyre-creepy/23412/8
+334,loose seat belt,11,/t/child-seats-in-sr22/77393/2
+335,loose seat belt,12,/t/where-are-we-with-the-seat-belt-harness-issue/16155
+336,loose seat belt,13,/t/long-ifr-cross-country/72709/14
+337,loose seat belt,14,/t/passanger-seat-belts-in-back-seat/15628/5
+338,loose seat belt,15,/t/cirrus-sr20-down-or-into-the-fence-after-taking-off-kssi-st-simons-island-airport/83498/18
+339,loose seat belt,16,/t/dual-inertia-reel-service-bulletin-optional/22707
+340,loose seat belt,17,/t/improving-comfort/90383/15
+341,loose seat belt,18,/t/extreme-turbulence-in-the-flight-levels/49012/3
+342,loose seat belt,19,/t/how-to-handle-severe-turbulence/71330/2
+343,loose seat belt,20,/t/seat-belt-sl-in-the-works/12120
+344,loose seat belt,21,/t/baby-seats/69128/5
+345,loose seat belt,22,/t/escape-thoughts/90606
+346,loose seat belt,23,/t/infant-seat/34523/5
+347,loose seat belt,24,/t/sheepskin-covers-interior-replacement/46974/14
+348,loose seat belt,25,/t/how-do-thunderstorms-kill-you/26378/11
+349,loose seat belt,26,/t/i-was-the-pilot-that-went-down-in-the-sr22/17544/18
+350,loose seat belt,27,/t/new-seat-belt-question/25220
+351,loose seat belt,28,/t/how-much-does-it-cost-to-add-seat-belt-air-bags-to-a-gereation-one-cirrus/70312/3
+352,loose seat belt,29,/t/seat-staining-due-to-seat-belt-buckle/19251/17
+353,loose seat belt,30,/t/flying-kids/39454/13
+354,loose seat belt,31,/t/check-this-pirep/61228/20
+355,loose seat belt,32,/t/angel-flights-are-very-gratifying/89184/7
+356,loose seat belt,33,/t/caps-pull-30-in-sr22-n787cb-near-kiowa-co-was-kftg-caps-pull-reported-30-jan-2011/56798/28
+357,loose seat belt,34,/t/cirrus-nonfatal-sr22-n592bc-near-bartow-fl-11-june-2017-was-cirrus-down-polk-county-florida/87118/54
+358,loose seat belt,35,/t/front-seat-belts/15758
+359,loose seat belt,36,/t/seat-belts/22344/3
+360,loose seat belt,37,/t/tugging-seat-belts/34930/2
+361,loose seat belt,38,/t/seat-belts/18794/7
+362,loose seat belt,39,/t/january-2006-sr22-caps-pull/28532/267
+363,loose seat belt,40,/t/airbags/17205/3
+364,loose seat belt,41,/t/caps-save-78-in-sr22t-n131tx-near-kennett-mo-7-sept-2018/92945/116
+365,loose seat belt,42,/t/seatbelts-and-doors-deleted/31343/12
+366,loose seat belt,43,/t/seat-harness-problem-for-tall-pilots/76982/27
+367,loose seat belt,44,/t/caps-deployment/27842/25
+368,loose seat belt,45,/t/better-to-be-legal-or-safe/64960/55
+369,loose seat belt,46,/t/rear-seat-removal/19839/38
+370,loose seat belt,47,/t/sadly-its-not-just-cirrus-pilots/17161/25
+371,loose seat belt,48,/t/airdogs-2/34861
+372,loose seat belt,49,/t/sr22-s-n-324-manufacturing-defect-long/26773/82
+373,power off landing,0,/t/sr-20-landing-power-settings/40724
+374,power off landing,1,/t/landing-with-power-counterpoint/60787
+375,power off landing,2,/t/engine-backfire-on-power-off-180-practice-landings/84493
+376,power off landing,3,/t/u-s-top-court-backs-landowners-limits-power-of-epa/62398
+377,power off landing,4,/t/after-landing-low-power-engine-boost-pump-issues/7660
+378,power off landing,5,/t/power-loss-after-landing/75319
+379,power off landing,6,/t/power-supply-for-landing-light-sr22-s-n-0219-2003/71831
+380,power off landing,7,/t/low-voltage-after-landing/75835
+381,power off landing,8,/t/nose-wheel-shimmy-during-normal-landing/69351
+382,power off landing,9,/t/engine-failure-g1-emergency-landing/89968
+383,power off landing,10,/t/alt-1-fail-continue-flying-or-land/92180
+384,power off landing,11,/t/low-volts-after-landing/89960
+385,power off landing,12,/t/tube-blow-out-on-landing/57229
+386,power off landing,13,/t/landing-light-turning-itself-off/62581
+387,power off landing,14,/t/landing-light/91954
+388,power off landing,15,/t/dim-landing-lights/73135
+389,power off landing,16,/t/landing-lights/83834
+390,power off landing,17,/t/trouble-shooting-landing-light/45769
+391,power off landing,18,/t/landing-light-is-out/67170
+392,power off landing,19,/t/melting-bubbling-on-lopresti-landing-light/54875
+393,power off landing,20,/t/2002-g1-sr22-landing-light/96158
+394,power off landing,21,/t/burn-mark-behind-landing-light/66534
+395,power off landing,22,/t/lopresti-new-landing-light/8903
+396,power off landing,23,/t/world-record-attempt-land-speed-record-human-powered-vehicle/97873
+397,power off landing,24,/t/sudden-left-wing-drop-during-power-off-stall-approach-to-landing-stall/53400
+398,power off landing,25,/t/human-powered-vehicle-trying-to-break-the-land-speed-record/91034
+399,power off landing,26,/t/taws-pull-up-warning-on-landing-yesterday/97588
+400,power off landing,27,/t/sporadic-sr20-landing-light/8119
+401,power off landing,28,/t/cirrus-fatal-109-in-sr20-n610da-near-lake-wales-fl-22-july-2015/78368/28
+402,power off landing,29,/t/caps-event-36-in-sr22-n138ck-near-pickens-sc-on-22-july-2012-was-liberty-sc-was-early-report-on-cirrus-down-looks-like-a-good-chute-pull/64152/28
+403,power off landing,30,/t/whats-the-going-rate-for-the-rubber-pucks-in-a-g2-nose-landing-gear/71421
+404,power off landing,31,/t/front-landing-gear-pucks/60259
+405,power off landing,32,/t/landing-speeds-underweight/85638
+406,power off landing,33,/t/more-on-landing-light-covers/46268
+407,power off landing,34,/t/cessna-down-in-orlando/23771/13
+408,power off landing,35,/t/fred-teutenberg/59014/33
+409,power off landing,36,/t/2001-sr22-looking-to-replace-landing-light/76934
+410,power off landing,37,/t/landing-light-cover/46166
+411,power off landing,38,/t/x2-landing-light-installation/46089
+412,power off landing,39,/t/student-pilot-needs-advice/78998
+413,power off landing,40,/t/led-landing-light-upgrade/78861
+414,power off landing,41,/t/cirrus-fatal-70-in-sr22-n847c-near-south-bend-in-was-cirrus-accident-with-injuries-at-south-bend-regional-airport-ksbn-4-april-2011/57694/9
+415,power off landing,42,/t/cirrus-landing-gear-simulator/65782
+416,power off landing,43,/t/landing-light-g2-intermittent/84054
+417,power off landing,44,/t/landing-light-recommendations/60102
+418,power off landing,45,/t/fluid-on-front-landing-strut-plastic/97964
+419,power off landing,46,/t/landing-light-failure/93519
+420,power off landing,47,/t/sr22-nlg-nose-landing-gear-breaks-off/89981
+421,power off landing,48,/t/2004-sr20-g2-replacement-landing-light-ballast/88826
+422,power off landing,49,/t/g3-landing-light-upgrade/75672
+423,music volume low,0,/t/audio-panel-music-volumes-and-issues/16009
+424,music volume low,1,/t/ps-engineering-audio-panel-lights-seems-too-bright/29379/5
+425,music volume low,2,/t/comfort-sound-and-cooling/17676/24
+426,music volume low,3,/t/xm-radio/12449/3
+427,music volume low,4,/t/radio-shack-3-channel-headphone-volume-booster-gone/43505
+428,music volume low,5,/t/bluemax-now-knows-which-tank-is-selected/100140/9
+429,music volume low,6,/t/help-with-audio-music-volume/44940
+430,music volume low,7,/t/any-audiophiles-recommend-in-wall-ceiling-speakers/74536/12
+431,music volume low,8,/t/disc-player/38785/2
+432,music volume low,9,/t/lynx-ngt9000-for-trc497-skywatch-and-pma450a-for-gma340/84739/60
+433,music volume low,10,/t/back-seat-volume/24720/3
+434,music volume low,11,/t/xm-radio-quality/93822/2
+435,music volume low,12,/t/volume-from-music-1-and-music-1-inputs/18839
+436,music volume low,13,/t/audio-again/22290/3
+437,music volume low,14,/t/bose-headsets/21037/2
+438,music volume low,15,/t/question-on-audio-panel-gma-340/19018
+439,music volume low,16,/t/xm-radio-how-to-keep-it-going-during-atc/35082/11
+440,music volume low,17,/t/garmin-gtn650-making-bad-noises/86910
+441,music volume low,18,/t/faq-1st-cut/17506
+442,music volume low,19,/t/dear-alexandre/70295/36
+443,music volume low,20,/t/doctors-crash-more-often/81406/38
+444,music volume low,21,/t/faint-transmit-on-the-perspective-and-faint-xm-radio/46807/10
+445,music volume low,22,/t/dvd-player/23880/13
+446,music volume low,23,/t/how-do-i-control-the-aux-music-volume-on-the-gma-340/89213
+447,music volume low,24,/t/cockpit-voice-recorder-adapters/41952/23
+448,music volume low,25,/t/impedance-matcher-free/94493/3
+449,music volume low,26,/t/traffic-alert/40811/7
+450,music volume low,27,/t/pma8000bt-new-user-interface/57821/23
+451,music volume low,28,/t/impedance-matching-device-adapter/44997/20
+452,music volume low,29,/t/music/35179/2
+453,music volume low,30,/t/gtx-345-problems/84289/9
+454,music volume low,31,/t/g3-questions-about-music-input-and-cig-lighter-plug/76246/15
+455,music volume low,32,/t/rectifier-not-hitting-all-6-diodes-whine-increasing-in-sound-with-engine-revs-but-only-with-the-flightcell-pro-plugged-in-diagnostic/54619/12
+456,music volume low,33,/t/caps-save-67-in-sr22-n678z-east-of-colorado-springs-co-18-june-2016/82670/361
+457,music volume low,34,/t/garmin-340/38506
+458,music volume low,35,/t/wireless-bluetooth-foreflight-audio-via-headset-input/90678/83
+459,music volume low,36,/t/xm-radio-on-gts/33922/14
+460,music volume low,37,/t/very-loud-feedback-transmitting-through-headset-and-intercom-speaker-troubleshooting-help/54932
+461,music volume low,38,/t/avidyne-xm-wx-vs-garmin-496/35310/5
+462,music volume low,39,/t/audacity/26189/7
+463,music volume low,40,/t/turning-off-muting-of-audio-input-on-intercom-squelch/21583/8
+464,music volume low,41,/t/sold-lightspeed-sierra-4000-headsets-for-sale-x2/78454
+465,music volume low,42,/t/xm-radio-volume-for-rear-passengers-too-low/78009
+466,music volume low,43,/t/cd-player/16506/3
+467,music volume low,44,/t/cirrus-audio-advice/76736/3
+468,music volume low,45,/t/pma-8000b/29699/2
+469,music volume low,46,/t/moron-in-chief/85976/253
+470,music volume low,47,/t/audio-jack-volume/15077/4
+471,music volume low,48,/t/garmin-340-volume-of-auxiliary-entertainment-inputs/8776/2
+472,music volume low,49,/t/clarity-aloft-bose-very-quiet/28479/4
