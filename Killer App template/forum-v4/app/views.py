@@ -44,6 +44,12 @@ def index():
 
     return render_template("index.html", len = len(data), data=data, selection=selected, selected_item=selected_item)
 
+
+@app.route('/ASRS/<acn>')
+def get_asrs_report(acn):
+    data = fetch_asrs_results(acn)
+    return render_template("asrs_report.html", data=data, acn=acn)
+
 @app.route('/COPAForum', methods=['GET'])
 def search_copa():
     search_string = request.args.get('q')
@@ -57,7 +63,7 @@ def search_wikiblog():
     return render_template("wikiblog.html", len = len(data), data=data, search_string= search_string)
 
 @app.route('/COPAYouTube', methods=['GET'])
-def search_youtub():
+def search_youtube():
     search_string = request.args.get('q')
     data = fetch_youtube_results(search_string)
     # data =
