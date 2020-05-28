@@ -8,29 +8,26 @@
     </div>
     <div class="posttext pull-left">
       <h2>
-        <a target="_blank" href="{{ data }}">
-          {{ data['hits']['hit'][i]['fields']['id']}}
+        <a target="_blank" href="#">
+          {{ data[i]['report_1_2'] }}
         </a>
       </h2>
-      <p>{{ data['hits']['hit'][i]['fields']['report'][0:200] ~ '...' }}</p>
+      <p>{{ data[i]['report_1'][0:200] ~ '...' }}</p>
     </div>
     <div class="clearfix"></div>
   </div>
   <div class="postinfo pull-left">
     <div class="comments">
       <div class="commentbg">
-        <!-- {{ data['hits']['hit'][i]['fields']['number'] }} -->
         <div class="mark">
         </div>
       </div>
     </div>
     <div class="views">
       <i class="fa fa-eye"></i>
-      <!-- {{ data['hits']['hit'][i]['fields']['name'] }} -->
     </div>
     <div class="time">
       <i class="fa fa-book"></i>
-      <!-- {{ data['hits']['hit'][i]['fields']['author'] }} -->
     </div>
   </div>
   <div class="clearfix"></div>

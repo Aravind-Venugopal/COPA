@@ -19,7 +19,7 @@ headers = {
 'accept': "application/json"
 }
 
-yt = pd.read_csv('./static/COPAYoutubeData.csv').iloc[:,1:]
+yt = pd.read_csv('COPAYoutubeData.csv').iloc[:,1:]
 yt.fillna('', inplace=True)
 global search_string
 global selected_item
@@ -138,7 +138,15 @@ def fetch_magazine_results(searchterm):
 def fetch_asrs_results(searchterm):
     url = 'http://search-arsr-vsmdyadzi6aefkfnlvybpi36yu.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
     res = requests.get(url,  params = {'q':searchterm}, headers=headers)
-    return res.json()
+    data = res.json()
+    hits_count = len(data['hits']['hit'])
+    complete_res = []
+    for i in range(hits_count):
+        reformat_data = pd.DataFrame(data['hits']['hit'][i]['fields']['report'].split('----'), columns=['fields'])
+        reformat_data['key'] = reformat_data['fields'].apply(lambda x: get_key(x))
+        reformat_data['content'] = reformat_data['fields'].apply(lambda x: get_content(x))
+        complete_res.append(dict(zip(reformat_data['key'], reformat_data['content'])))
+    return complete_res
 
 def fetch_avweb_results(searchterm):
     avweb_url = 'https://www.avweb.com/'
@@ -162,6 +170,20 @@ def fetch_avweb_results(searchterm):
      for idx,a in enumerate(soup.find_all('div',class_ = re.compile(r'td_module_16.*')))]
         results.extend(page_res)
     return json.dumps(results)
+
+def get_key(field):
+    try:
+        key = field.split(':')[0]
+    except:
+        key = None
+    return key
+
+def get_content(field):
+    try:
+        content = field.split(':')[1]
+    except:
+        content = None
+    return content
 
 def blurb_highlighter(text, words):
     '''
