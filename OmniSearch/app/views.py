@@ -121,18 +121,18 @@ def fetch_youtube_results(searchterm):
 
 def fetch_wikiblog_results(searchterm):
     url = 'http://search-wikiblog-gv65dajcbf5dxrsdwwrjyogvnm.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
     return res.json()
 
 def fetch_magazine_results(searchterm):
-    url = 'http://search-magazine-0430-45r2xlihhxs5kqu25j2djuz7ea.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm}, headers=headers)
+    url = 'http://search-magazine-0528-xptjf5ccnkrzhnoaju6w4nhw54.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
+    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
     return res.json()
 
 def fetch_asrs_results(searchterm):
     # searchterm = 'cirrus' + searchterm
     url = 'http://search-arsr-vsmdyadzi6aefkfnlvybpi36yu.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
     data = res.json()
     hits_count = len(data['hits']['hit'])
     complete_res = []
