@@ -38,6 +38,7 @@ function requestFromCOPA() {
     'GET',
     url + window.query_string,
     true);
+    // xhr.setRequestHeader('Access-Control-Allow-Origin', 'null');
     xhr.onreadystatechange = function() {
       if(xhr.readyState == 4) {
         var res_json = JSON.parse(xhr.responseText);
@@ -88,6 +89,7 @@ function requestFromWiki() {
     'GET',
     url + window.query_string,
     true);
+    // xhr.setRequestHeader('Access-Control-Allow-Origin', 'null');
     xhr.onreadystatechange = function() {
       if(xhr.readyState == 4) {
         var res_json = JSON.parse(xhr.responseText);
@@ -105,6 +107,7 @@ function requestFromMagazine() {
     'GET',
     url + window.query_string,
     true);
+    // xhr.setRequestHeader('mode', 'no-cors');
     xhr.onreadystatechange = function() {
       if(xhr.readyState == 4) {
         var res_json = JSON.parse(xhr.responseText);
