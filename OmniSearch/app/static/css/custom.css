@@ -188,6 +188,7 @@ ul.socialicons li a:hover {
 
 .avatar img {
     border-radius: 50%;
+    height: 50px;
 }
 
 .avatar .status {
