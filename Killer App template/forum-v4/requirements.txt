@@ -306,7 +306,7 @@ watchdog==0.10.2
 wcwidth==0.1.9
 webencodings==0.5.1
 WebOb==1.8.5
-Werkzeug==0.15.2
+Werkzeug==0.15.3
 widgetsnbextension==3.5.1
 wikipedia==1.4.0
 wrapt==1.11.2
