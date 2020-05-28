@@ -196,7 +196,7 @@ prettytable==0.7.2
 prometheus-client==0.7.1
 prompt-toolkit==3.0.5
 protobuf==3.9.1
-psutil==5.6.3
+psutil==5.6.6
 ptyprocess==0.6.0
 PuLP==1.6.9
 py==1.8.0
