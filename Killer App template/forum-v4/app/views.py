@@ -142,6 +142,7 @@ def fetch_magazine_results(searchterm):
     return res.json()
 
 def fetch_asrs_results(searchterm):
+    # searchterm = 'cirrus' + searchterm 
     url = 'http://search-arsr-vsmdyadzi6aefkfnlvybpi36yu.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
     res = requests.get(url,  params = {'q':searchterm}, headers=headers)
     data = res.json()
