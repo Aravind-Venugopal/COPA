@@ -58,8 +58,13 @@ def search_copa():
         data = fetch_copa_results(search_string)
     else:
         error_message = 'Please type your search'
-        return render_template("error.html", error_message = error_message)
-    return render_template("copaforum.html", len = len(data), data=data, search_string= search_string)
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+
+    if not data['posts']:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("copaforum.html", len = len(data), data=data, search_string= search_string)
 
 @app.route('/COPAWikiBlog', methods=['GET'])
 def search_wikiblog():
@@ -68,8 +73,13 @@ def search_wikiblog():
         data = fetch_wikiblog_results(search_string)
     else:
         error_message = 'Please type your search'
-        return render_template("error.html", error_message = error_message)
-    return render_template("wikiblog.html", len = len(data), data=data, search_string= search_string)
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+
+    if not data['hits']['hit']:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("wikiblog.html", len = len(data), data=data, search_string= search_string)
 
 @app.route('/COPAYouTube', methods=['GET'])
 def search_youtube():
@@ -89,7 +99,13 @@ def search_magazine():
     else:
         error_message = 'Please type your search'
         return render_template("error.html", error_message = error_message)
-    return render_template("magazine.html", len = len(data), data=data, search_string= search_string)
+
+    if not data['hits']['hit']:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("magazine.html", len = len(data), data=data, search_string= search_string)
+
 
 @app.route('/AVWeb', methods=['GET'])
 def search_avweb():
@@ -99,7 +115,13 @@ def search_avweb():
     else:
         error_message = 'Please type your search'
         return render_template("error.html", error_message = error_message)
-    return render_template("avweb.html", len = len(data), data=data, search_string= search_string)
+
+    if not data:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("avweb.html", len = len(data), data=data, search_string= search_string)
+
 
 @app.route('/ASRS', methods=['GET'])
 def search_asrs():
@@ -109,8 +131,14 @@ def search_asrs():
     else:
         error_message = 'Please type your search'
         return render_template("error.html", error_message = error_message)
-    return render_template("asrs.html", len = len(data), data=data, search_string= search_string)
 
+    if not data:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("asrs.html", len = len(data), data=data, search_string= search_string)
+
+    
 @app.route('/about')
 def about():
     return render_template("about.html")
