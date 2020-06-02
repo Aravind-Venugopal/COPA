@@ -1,0 +1,39 @@
+{% extends "index.html" %}
+{% block section %}
+{% for i in range(0, len) %}
+<div class="post">
+  <div class="wrap-ut pull-left">
+    <div class="userinfo pull-left">
+      <div class="avatar">
+        <img src="{{ get_avatar_url(data['posts'][i]['avatar_template']) }}" alt="" />
+      </div>
+    </div>
+    <div class="posttext pull-left">
+      <h2>
+        <a target="_blank" href="{{ 'https://forum.cirruspilots.org/t/' ~ data['posts'][i]['topic_id'] ~ '/' ~ data['posts'][i]['post_number'] }}">
+          {{ data['topics'][i]['title'] }}
+
+        </a>
+      </h2>
+      <p>
+        {{ data['posts'][i]['blurb'] }}
+        <!-- {{ data['posts'][i] }} -->
+      </p>
+    </div>
+    <div class="clearfix"></div>
+  </div>
+  <div class="postinfo pull-left">
+    <div class="comments">
+      <div class="commentbg">
+        560
+        <div class="mark"></div>
+      </div>
+
+    </div>
+    <div class="views"><i class="fa fa-eye"></i> 1,568</div>
+    <div class="time"><i class="fa fa-clock-o"></i> 24 min</div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+{% endfor %}
+{% endblock %}
