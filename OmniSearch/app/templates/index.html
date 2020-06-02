@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% block title %}Home{% endblock %}
+{% block title %}COPA OmniSearch{% endblock %}
 {% block body %}
 <div class="container">
   <div class="container">
@@ -21,13 +21,13 @@
         </div>
       </div>
       <div class="col-lg-8 col-md-8">
+        {% if search_string|length %}
         <br>
         <div class="pull-left">
-          {% if search_string|length %}
           Search results for <b>{{ search_string }}</b> from <b>{{ url_for(request.endpoint) }}</b>
-          {% endif %}
         </div>
         <br><br>
+        {% endif %}
         {% block section %}
         {% endblock %}
       </div>

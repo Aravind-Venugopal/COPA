@@ -53,46 +53,97 @@ def get_asrs_report(acn):
 @app.route('/COPAForum', methods=['GET'])
 def search_copa():
     search_string = request.args.get('q')
-    data = fetch_copa_results(search_string)
-    return render_template("copaforum.html", len = len(data), data=data, search_string= search_string)
+    data = []
+    if search_string:
+        data = fetch_copa_results(search_string)
+    else:
+        error_message = 'Please type your search'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+
+    if not data['posts']:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("copaforum.html", len = len(data), data=data, search_string= search_string)
 
 @app.route('/COPAWikiBlog', methods=['GET'])
 def search_wikiblog():
     search_string = request.args.get('q')
-    data = fetch_wikiblog_results(search_string)
-    return render_template("wikiblog.html", len = len(data), data=data, search_string= search_string)
+    if search_string:
+        data = fetch_wikiblog_results(search_string)
+    else:
+        error_message = 'Please type your search'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+
+    if not data['hits']['hit']:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("wikiblog.html", len = len(data), data=data, search_string= search_string)
 
 @app.route('/COPAYouTube', methods=['GET'])
 def search_youtube():
     search_string = request.args.get('q')
-    data = fetch_youtube_results(search_string)
-    # data =
+    if search_string:
+        data = fetch_youtube_results(search_string)
+    else:
+        error_message = 'Please type your search'
+        return render_template("error.html", error_message = error_message)
     return render_template("youtube.html", len = len(data), data=data, search_string= search_string)
 
 @app.route('/COPAMagazine', methods=['GET'])
 def search_magazine():
     search_string = request.args.get('q')
-    data = fetch_magazine_results(search_string)
-    return render_template("magazine.html", len = len(data), data=data, search_string= search_string)
+    if search_string:
+        data = fetch_magazine_results(search_string)
+    else:
+        error_message = 'Please type your search'
+        return render_template("error.html", error_message = error_message)
+
+    if not data['hits']['hit']:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("magazine.html", len = len(data), data=data, search_string= search_string)
+
 
 @app.route('/AVWeb', methods=['GET'])
 def search_avweb():
     search_string = request.args.get('q')
-    data = fetch_avweb_results(search_string)
-    return render_template("avweb.html", len = len(data), data=data, search_string= search_string)
+    if search_string:
+        data = fetch_avweb_results(search_string)
+    else:
+        error_message = 'Please type your search'
+        return render_template("error.html", error_message = error_message)
+
+    if not data:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("avweb.html", len = len(data), data=data, search_string= search_string)
+
 
 @app.route('/ASRS', methods=['GET'])
 def search_asrs():
     search_string = request.args.get('q')
-    data = fetch_asrs_results(search_string)
-    return render_template("asrs.html", len = len(data), data=data, search_string= search_string)
+    if search_string:
+        data = fetch_asrs_results(search_string)
+    else:
+        error_message = 'Please type your search'
+        return render_template("error.html", error_message = error_message)
 
+    if not data:
+        error_message = 'There are no search results'
+        return render_template("error.html", error_message = error_message, search_string= search_string)
+    else:
+        return render_template("asrs.html", len = len(data), data=data, search_string= search_string)
+
+    
 @app.route('/about')
 def about():
     return render_template("about.html")
 
 def fetch_copa_results(searchterm):
-    # searchterm = search_string
     APIKEY="35fa814a17486f668521924571d4d02b7a8f1533d2b595d2f9a075abb7919346"
     APIUSERNAME="arvenugopal"
     headers = {
@@ -121,18 +172,18 @@ def fetch_youtube_results(searchterm):
 
 def fetch_wikiblog_results(searchterm):
     url = 'http://search-wikiblog-gv65dajcbf5dxrsdwwrjyogvnm.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
     return res.json()
 
 def fetch_magazine_results(searchterm):
-    url = 'http://search-magazine-0430-45r2xlihhxs5kqu25j2djuz7ea.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm}, headers=headers)
+    url = 'http://search-magazine-0528-xptjf5ccnkrzhnoaju6w4nhw54.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
+    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
     return res.json()
 
 def fetch_asrs_results(searchterm):
     # searchterm = 'cirrus' + searchterm
     url = 'http://search-arsr-vsmdyadzi6aefkfnlvybpi36yu.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
     data = res.json()
     hits_count = len(data['hits']['hit'])
     complete_res = []
