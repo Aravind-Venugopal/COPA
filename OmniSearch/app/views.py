@@ -7,11 +7,12 @@ from fuzzywuzzy import process
 
 from app import app
 
-selection = {'COPA': 'COPA Forum',
-            'WikiBlog': 'Wiki and Blog',
-            'Magazine': 'Magazine',
-            'Youtube': 'COPA YouTube',
-            'AVWeb': 'AV Web'}
+selection = {'/COPAForum': 'COPA Forum',
+            '/COPAWikiBlog': 'COPA Wiki and Blog',
+            '/COPAMagazine': 'COPA Magazine',
+            '/COPAYouTube': 'COPA YouTube',
+            '/AVWeb': 'AV Web',
+            '/ASRS': 'ASRS'}
 
 headers = {
 'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
@@ -138,7 +139,7 @@ def search_asrs():
     else:
         return render_template("asrs.html", len = len(data), data=data, search_string= search_string)
 
-    
+
 @app.route('/about')
 def about():
     return render_template("about.html")
@@ -230,6 +231,10 @@ def get_content(field):
     except:
         content = None
     return content
+
+def get_source_name(url):
+    return selection[url]
+app.jinja_env.globals.update(get_source_name=get_source_name)
 
 def get_avatar_url(url):
     avatar_url = 'https://sjc5.discourse-cdn.com/copa/user_avatar/forum.cirruspilots.org/'

@@ -10,7 +10,13 @@
           <div class="blocktxt">
             <ul class="cats">
               <!-- <li><a href="#">All </a></li> -->
-              <li><a href="{{ '/COPAForum?q=' ~ search_string }}">COPA Forums</a></li>
+              <li>
+                <a href="{{ '/COPAForum?q=' ~ search_string }}">
+                  <b>
+                    COPA Forums
+                  </b>
+                </a>
+              </li>
               <li><a href="{{ '/COPAWikiBlog?q=' ~ search_string }}">COPA Wiki and Blog</a></li>
               <li><a href="{{ '/COPAYouTube?q=' ~ search_string }}">COPA YouTube</a></li>
               <li><a href="{{ '/COPAMagazine?q=' ~ search_string }}">COPA Magazine</a></li>
@@ -24,7 +30,7 @@
         {% if search_string|length %}
         <br>
         <div class="pull-left">
-          Search results for <b>{{ search_string }}</b> from <b>{{ url_for(request.endpoint) }}</b>
+          Search results for <b>{{ search_string }}</b> from <b>{{ get_source_name(url_for(request.endpoint)) }}</b>
         </div>
         <br><br>
         {% endif %}
