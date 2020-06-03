@@ -1,56 +1,48 @@
 {% extends "index.html" %}
+{% block title %}ASRS Report {{ acn }}{% endblock %}
 {% block section %}
 <div class="post ">
-  <!-- <div class="topwrap"> -->
-  <!-- <div class="userinfo pull-left">
-      <div class="avatar">
-        <img src="images/avatar.jpg" alt="" />
-        <div class="status green">&nbsp;</div>
-      </div>
-
-      <div class="icons">
-        <img src="images/icon1.jpg" alt="" /><img src="images/icon4.jpg" alt="" /><img src="images/icon5.jpg" alt="" /><img src="images/icon6.jpg" alt="" />
-      </div>
-    </div> -->
+  <div class="userinfo pull-left">
+    <div class="avatar">]
+    </div>
+  </div>
   <div class="posttext pull-left">
     <h3>ACN: {{ acn }}</h3>
     <p>
       Year: {{ data[0]['year'] }} <br>
+      Month: {{ data[0]['month'] }} <br>
       Local Time: {{ data[0]['local_time'] }}
     </p>
     <p>
-
+      Locale Reference.Airport: {{ data[0]['airport'] }} <br>
+      State Reference: {{ data[0]['state'] }} <br>
+      Altitude.AGL.Single Value: {{ data[0]['agl'] }} <br>
+      Light: {{ data[0]['light'] }}
     </p>
-
+    <p>
+      Aircraft Operator: {{ data[0]['operator_1'] }} <br>
+      Make Model Name : {{ data[0]['make_model_name_1'] }}<br>
+      Crew Size.Number Of Crew: {{ data[0]['crew_size_1'] }} <br>
+      Operating Under FAR Part: {{ data[0]['far_1'] }} <br>
+      Flight Plan: {{ data[0]['flight_plan_1'] }} <br>
+      Mission: {{ data[0]['mission_1'] }} <br>
+      Flight Phase: {{ data[0]['flight_phase_1'] }}
+    </p>
+    <p>
+      Location In Aircraft: {{ data[0]['location_in_flight_1'] }}
+      Function.Flight Crew: {{ data[0]['function_flight_crew_1'] }} <br>
+      Qualification.Flight Crew: {{ data[0]['qualification_flight_crew_1'] }}<br>
+      Experience.Flight Crew: {{ data[0]['experience_flight_crew_1'] }} <br>
+      Human Factors: {{ data[0]['human_factor_1'] }}
+    </p>
+    <p>
+      Were Passengers Involved In Event: {{ data[0]['passenger_involved'] }}<br>
+      Result.General: {{ data[0]['atc_steps'] }}
+    </p>
     <p>Narrative: {{ data[0]['report_1'] }}</p>
     <p>Synopsis: {{ data[0]['report_1_2'] }}</p>
   </div>
   <div class="clearfix"></div>
 </div>
-<!-- <div class="postinfobot">
 
-    <div class="likeblock pull-left">
-      <a href="#" class="up"><i class="fa fa-thumbs-o-up"></i>25</a>
-      <a href="#" class="down"><i class="fa fa-thumbs-o-down"></i>3</a>
-    </div>
-
-    <div class="prev pull-left">
-      <a href="#"><i class="fa fa-reply"></i></a>
-    </div>
-
-    <div class="posted pull-left"><i class="fa fa-clock-o"></i> Posted on : 20 Nov @ 9:30am</div>
-
-    <div class="next pull-right">
-      <a href="#"><i class="fa fa-share"></i></a>
-
-      <a href="#"><i class="fa fa-flag"></i></a>
-    </div>
-
-    <div class="clearfix"></div>
-  </div> -->
-<!-- </div> -->
-<div class="post">
-  <h1></h1>
-  {{ data[0] }}
-</div>
 {% endblock %}

@@ -29,21 +29,21 @@ search_string = ''
 
 @app.route('/',  methods=['POST', 'GET'])
 def index():
-    selected_item = 'COPA'
-    selected = selection[selected_item]
-    data = []
-    if request.method == 'POST':
-        search_string = request.form['search_string']
+    # selected_item = '/COPAForum'
+    # selected = selection[selected_item]
+    # data = []
+    # if request.method == 'POST':
+        # search_string = request.form['search_string']
         # selected_item = request.form['selection']
-        data = fetch_from_source(selected_item, search_string)
-    elif request.method == 'GET':
-        search_string = request.args.get('q')
-        selected_item = request.args.get('selection')
-        if selected_item is not None:
-            selected = selection[selected_item]
-            data = fetch_from_source(selected_item, search_string)
+    #     data = fetch_from_source(selected_item, search_string)
+    # elif request.method == 'GET':
+    #     search_string = request.args.get('q')
+    #     selected_item = request.args.get('selection')
+    #     if selected_item is not None:
+    #         selected = selection[selected_item]
+    #         data = fetch_from_source(selected_item, search_string)
 
-    return render_template("index.html", len = len(data), data=data, selection=selected, selected_item=selected_item)
+    return render_template("index.html")
 
 
 @app.route('/ASRS/<acn>')
@@ -169,7 +169,7 @@ def fetch_youtube_results(searchterm):
     # searchterm = request.args.get('searchterm')
     matches = [a for a,b in process.extract(searchterm,yt['title'].tolist())]
     results = yt.loc[yt['title'].isin(matches)]
-    return results.to_json(orient='records')
+    return results.reset_index(drop=True).T.to_dict()
 
 def fetch_wikiblog_results(searchterm):
     url = 'http://search-wikiblog-gv65dajcbf5dxrsdwwrjyogvnm.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
