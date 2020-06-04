@@ -9,11 +9,13 @@
     <div class="posttext pull-left">
       <h2>
         <a target="_blank" href="{{ data['hits']['hit'][i]['fields']['article_link'] }}">
+
+
           {{ data['hits']['hit'][i]['fields']['article']}}
         </a>
       </h2>
       <p>
-        {{ blurb_highlighter(data['hits']['hit'][i]['fields']['content'][0:200] ~ '...' , search_string.lower().split(' '))|safe }}
+        {{ blurb_highlighter(data['hits']['hit'][i]['fields']['content'][0:500] ~ '...', search_string.lower().split(' '))|safe }}
       </p>
     </div>
     <div class="clearfix"></div>
