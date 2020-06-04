@@ -14,11 +14,7 @@ selection = {'/COPAForum': 'COPA Forum',
             '/AVWeb': 'AV Web',
             '/ASRS': 'ASRS'}
 
-headers = {
-'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
-'content-type': "application/json",
-'accept': "application/json"
-}
+
 
 yt = pd.read_csv('COPAYoutubeData.csv').iloc[:,1:]
 yt.fillna('', inplace=True)
@@ -85,7 +81,7 @@ def search_wikiblog():
         error_message = 'There are no search results'
         return render_template("error.html", error_message = error_message, search_string= search_string)
     else:
-        return render_template("wikiblog.html", len = len(data), data=data, search_string= search_string)
+        return render_template("wikiblog.html", len = len(data['hits']['hit']), data=data, search_string= search_string)
 
 @app.route('/COPAYouTube', methods=['GET'])
 def search_youtube():
@@ -110,7 +106,7 @@ def search_magazine():
         error_message = 'There are no search results'
         return render_template("error.html", error_message = error_message, search_string= search_string)
     else:
-        return render_template("magazine.html", len = len(data), data=data, search_string= search_string)
+        return render_template("magazine.html", len = len(data['hits']['hit']), data=data, search_string= search_string)
 
 
 @app.route('/AVWeb', methods=['GET'])
@@ -177,18 +173,34 @@ def fetch_youtube_results(searchterm):
     return results.reset_index(drop=True).T.to_dict()
 
 def fetch_wikiblog_results(searchterm):
+    headers = {
+    'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+    'content-type': "application/json",
+    'accept': "application/json"
+    }
     url = 'http://search-wikiblog-gv65dajcbf5dxrsdwwrjyogvnm.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm}, stream=True, headers=headers)
     return res.json()
 
 def fetch_magazine_results(searchterm):
+    headers = {
+    'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+    'content-type': "application/json",
+    'accept': "application/json"
+    }
     url = 'http://search-magazine-0528-xptjf5ccnkrzhnoaju6w4nhw54.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm}, stream=True, headers=headers)
+    # print(len(res.json()))
     return res.json()
 
 def fetch_asrs_results(searchterm):
+    headers = {
+    'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+    'content-type': "application/json",
+    'accept': "application/json"
+    }
     url = 'http://search-arsr-vsmdyadzi6aefkfnlvybpi36yu.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm}, headers=headers)
     data = res.json()
     hits_count = len(data['hits']['hit'])
     complete_res = []
