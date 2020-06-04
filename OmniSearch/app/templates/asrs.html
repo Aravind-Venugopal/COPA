@@ -12,7 +12,9 @@
           {{ data[i]['report_1_2'] }}
         </a>
       </h2>
-      <p>{{ data[i]['report_1'][0:200] ~ '...' }}</p>
+      <p>
+        {{ blurb_highlighter(data[i]['report_1'][0:200] ~ '...' , search_string.lower().split(' '))|safe }}
+      </p>
     </div>
     <div class="clearfix"></div>
   </div>

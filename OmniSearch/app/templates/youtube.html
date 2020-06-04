@@ -8,7 +8,10 @@
     </div>
     <div class="posttext pull-left">
       <h2><a target="_blank" href="{{ data[i]['url'] }}">{{ data[i]['title'] }}</a></h2>
-      <p>{{ data[i]['content'][0:500] ~ '...' }}</p>
+
+      <p>
+        {{ blurb_highlighter(data[i]['content'][0:500] ~ '...', search_string.lower().split(' '))|safe }}
+      </p>
     </div>
     <div class="clearfix"></div>
   </div>
