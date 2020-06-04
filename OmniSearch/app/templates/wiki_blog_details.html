@@ -1,0 +1,21 @@
+{% extends "index.html" %}
+{% block title %}Wiki and Blog Article{% endblock %}
+{% block section %}
+<div class="post ">
+  <div class="userinfo pull-left">
+    <div class="avatar">
+    </div>
+  </div>
+  <div class="posttext pull-left">
+    <h3>{{ data['hits']['hit'][0]['fields']['title'] }}</h3>
+    <p>
+      {{ data['hits']['hit'][0]['fields']['author'] }}
+    </p>
+
+    <p>
+      {{ data['hits']['hit'][0]['fields']['body'] }}
+    </p>
+  </div>
+  <div class="clearfix"></div>
+</div>
+{% endblock %}

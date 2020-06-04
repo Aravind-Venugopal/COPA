@@ -12,7 +12,9 @@
           {{ data[i]['title'] }}
         </a>
       </h2>
-      <p>{{ data[i]['summary'][0:500] ~ '...' }}</p>
+      <p>
+        {{ blurb_highlighter(data[i]['summary'][0:500] ~ '...' , search_string.lower().split(' '))|safe }}
+      </p>
     </div>
     <div class="clearfix"></div>
   </div>

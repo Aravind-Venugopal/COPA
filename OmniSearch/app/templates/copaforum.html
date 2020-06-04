@@ -16,8 +16,7 @@
         </a>
       </h2>
       <p>
-        {{ data['posts'][i]['blurb'] }}
-        <!-- {{ data['posts'][i] }} -->
+        {{ blurb_highlighter(data['posts'][i]['blurb'], search_string.lower().split(' '))|safe }}
       </p>
     </div>
     <div class="clearfix"></div>
