@@ -51,6 +51,11 @@ def get_asrs_report(acn):
     data = fetch_asrs_results(acn)
     return render_template("asrs_report.html", data=data, acn=acn)
 
+@app.route('/WikiBlog/<source_id>')
+def get_wikiblog_report(source_id):
+    data = fetch_wikiblog_results(source_id)
+    return render_template("wiki_blog_details.html", data=data, source_id=source_id)
+
 @app.route('/COPAForum', methods=['GET'])
 def search_copa():
     search_string = request.args.get('q')
@@ -182,7 +187,6 @@ def fetch_magazine_results(searchterm):
     return res.json()
 
 def fetch_asrs_results(searchterm):
-    # searchterm = 'cirrus' + searchterm
     url = 'http://search-arsr-vsmdyadzi6aefkfnlvybpi36yu.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
     res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
     data = res.json()
@@ -249,12 +253,9 @@ def get_avatar_url(url):
 app.jinja_env.globals.update(get_avatar_url=get_avatar_url)
 
 def blurb_highlighter(text, words):
-    '''
-    Highlight the search terms in each result blurb
-    '''
     for word in words:
-        pattern = re.compile(' '+word+' ')
-        text = word.sub('<b> '+word+' </b>', text)
+        pattern = re.compile(' '+word+' ', re.IGNORECASE)
+        text = pattern.sub('<b> '+word+' </b>', text)
     return text
 app.jinja_env.globals.update(blurb_highlighter=blurb_highlighter)
 # app.jinja_env.filters['blurb_highlighter'] = blurb_highlighter
