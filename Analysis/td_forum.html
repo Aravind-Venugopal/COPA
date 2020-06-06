@@ -1,0 +1,239 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Analysis of COPA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">COPA Initialtive</a></h1>
+
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li>
+									<a href="#">Old Site Historical Data</a>
+									<ul>
+										<li><a href="td_overview.html">Overview</a></li>
+										<li><a href="td_traffic.html">Historical Traffic</a>
+										</li>
+										
+										<li><a href="td_engagement.html">Engagement</a>
+											
+										</li>
+										<li><a href="td_forum.html">Forum, Blog, Wiki</a></li>
+										<li><a href="td_user.html">Users</a></li>
+										<li><a href="td_suggestion.html">Suggestion Posts Analysis</a></li>
+										
+									</ul>
+								</li>
+								<li>
+									<a href="#">New Site Google Analytics</a>
+									<ul>
+										<li><a href="ga_overview.html">Overview</a></li>
+										<li><a href="ga_traffic.html">Website Traffic</a>
+											
+										</li>
+										
+										<li><a href="ga_search.html">Internal Search Queries</a></li>
+										<li>
+											<a href="ga_location.html">User</a>
+											
+										</li>
+										<li><a href="ga_acquition.html">Acquisition</a></li>
+										<li><a href="ga_behavior.html">Behavior</a></li>
+										
+									</ul>
+								</li>
+								
+								
+								<li class="break"><a href="killer_app.html">Killer APP</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<!--<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+							</ul>
+						</nav>
+					</div>
+				</div>
+				
+
+				
+
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+
+						<!-- Content -->
+							<article id="content">
+								<header>
+									<h2>Forum, Blog, and Wiki Posts</h2>
+									<p>Analyzing posts of forums, blogs, and wikis from the COPA database retrieved in Sep. 2019. </p>
+								</header>
+								<h3>Forum Posts</h3>
+								<p>   </p>
+								<p>In this dashboard, we presented the summarized data of forums (a.k.a. categories in the new website). 
+									In the forum, there are 78 forum sections(categories), and COPA members often create posts in the Cirrus Flying - forum and 
+									GA - Forum. On the new website, the number of forum sections has been reduced to 30 categories. 
+									There are about 95K first posts (a.k.a. topics) in the database and about 1M+ reply posts. As for the time series of the number of the first posts, 
+									we found that, before 2005, the number of the first posts increased fast. After 2005, the number of the first posts was within the range of 1,000 and 1,700 every quarter.
+									
+								</p>
+								<p>
+									<div class='tableauPlaceholder' id='viz1587570471645' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;H4&#47;H4YQHJWY7&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;H4YQHJWY7' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;H4&#47;H4YQHJWY7&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587570471645');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1027px';} else { vizElement.style.width='100%';vizElement.style.height='1877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								</p>
+								
+								<p>To study the characteristic of each forum section, we plot 2 scatter charts to show forum sections' number of the first posts, the number of replies, and the number of views. 
+									On the left chart, the forum sections with more first posts often have more replies for each first post. However, more first posts and replies does not mean users would like to 
+									view these posts. The dot size shows the average views of the forum section. We can see Cirrus Flying and GA forums' sizes are very small, while Guest Discussion, Marketplace, and 
+									Safety&Training forum sections have more views per posts. </p> 
+								<p><strong>Click the Forum Section Dot</strong>, and you can see the number of the first posts, replies, and how the number of the first posts change over time.   
+								  The Cirrus Flying and GA forum have many posts around 2005, but since 2008, the number of posts decreased from 1,278 to about 300. Meanwhile, other new forum sections created in 2008, such as the Marketplace forum and 
+								  Airframe & Powerplant forum, have 
+								more and more posts, taking away traffic from Cirrus Flying and GA forum. </p>
+								<p>The chart on the right shows the relationship between views and replies of different forum sections. This chart also shows the conversion from COPA members view the post to reply to the post. We can see that in Guest Discussion and Marketplace
+									forums, the conversion is low: most people only like to read the post rather than reply to the post. In Cirrus Flying and GA forums, the conversion is on a median level. In the Hot Section, this conversion is high. 
+									Website Issues and Suggestions forum also has such high conversion, meaning the COPA website's administrators do care about members' feedbacks. From the time series chart, we can find that there is a peak of the number of first posts in this forum 
+									section in 2013 Q4 and 2014 Q1. Considering this is the website migration time, people may complain about the change. We will study this forum section deeply.
+								</p>
+								
+								<div class='tableauPlaceholder' id='viz1587703857257' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlogViz_15876916972550&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='BlogViz_15876916972550&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Bl&#47;BlogViz_15876916972550&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587703857257');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1195px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1195px';} else { vizElement.style.width='100%';vizElement.style.height='1977px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<p> Only 38 COPA members wrote blogs, but there are 564 blog posts created by them. COPA blog is a feature after 2008, and many blog posts were generated during that time.
+									To be noticed, during Jan. 2014, the number of blog posts increased significantly. It seemed that the website migration boosted the number of blog posts since many posts talked about the 
+								COPA 3.0. Blog Influencer shows the most popular bloggers. The height of the bar is how many views their blog posts received, the number above the bar is how many blog posts they published, and 
+								the color represents how many replies they received. <strong>By clicking the bar or the point in the line chart</strong>, you can select the blogger or the time you want to check and also see when the blogger likes to post blogs.
+								The blog working time shows when bloggers like to publish their blog posts. Although the total number of posts is small, we can roughly say that most blog posts were published during the afternoon. </p>
+								
+								<p>   </p>
+								<div class='tableauPlaceholder' id='viz1587698653589' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wi&#47;Wiki_15876962516080&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Wiki_15876962516080&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Wi&#47;Wiki_15876962516080&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587698653589');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='827px';} else { vizElement.style.width='100%';vizElement.style.height='1377px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								<p>There are 11 COPA members contributed or organized the wiki. There are 883 wiki pages in the database with organized information. However, there were not many COPA members viewed wiki posts in recent years. 
+									 </p>
+							
+									 <ul class="nextpage">
+										<li><a href="td_user.html" class="button">Next: COPA Members</a></li>
+									</ul>	
+								
+							</article>
+
+						<!--<div class="row features">
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper first">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+						</div>-->
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<div id="footer" class="container">
+					<header class="major">
+						<h2>Contact Us</h2>
+						<p>Please feel free to contact us for more information.</p>
+					</header>
+					<!--<div class="row">-->
+						<section class="col-6 col-12-narrower">
+							<form method="post" action="mailto:xkzzhang@ucdavis.edu">
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobile">
+										<input name="name" placeholder="Name" type="text" />
+									</div>
+									<div class="col-6 col-12-mobile">
+										<input name="email" placeholder="Email" type="text" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+						<!--<section class="col-6 col-12-narrower">
+							<div class="row gtr-0">
+								<ul class="divided icons col-6 col-12-mobile">
+									<li class="icon brands fa-twitter"><a href="#"><span class="extra">twitter.com/</span>untitled</a></li>
+									<li class="icon brands fa-facebook-f"><a href="#"><span class="extra">facebook.com/</span>untitled</a></li>
+									<li class="icon brands fa-dribbble"><a href="#"><span class="extra">dribbble.com/</span>untitled</a></li>
+								</ul>
+								<ul class="divided icons col-6 col-12-mobile">
+									<li class="icon brands fa-instagram"><a href="#"><span class="extra">instagram.com/</span>untitled</a></li>
+									<li class="icon brands fa-youtube"><a href="#"><span class="extra">youtube.com/</span>untitled</a></li>
+									<li class="icon brands fa-pinterest"><a href="#"><span class="extra">pinterest.com/</span>untitled</a></li>
+								</ul>
+							</div>
+						</section>-->
+					<!--</div>-->
+				</div>
+				<div id="copyright" class="container">
+					<ul class="menu">
+						<li>&copy; COPA Initialtive Team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<p>Data Source: Cirrus Owners & Pilots Association (COPA)</p>
+						<P><img src="images/logo.png" alt="" width="50" height="50"/></P>
+					</ul>
+				</div>
+			</div>
+
+	</div>
+
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

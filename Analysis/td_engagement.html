@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Analysis of COPA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">COPA Initialtive</a></h1>
+
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li>
+									<a href="#">Old Site Historical Data</a>
+									<ul>
+										<li><a href="td_overview.html">Overview</a></li>
+										<li><a href="td_traffic.html">Historical Traffic</a>
+										</li>
+										
+										<li><a href="td_engagement.html">Engagement</a>
+											
+										</li>
+										<li><a href="td_forum.html">Forum, Blog, Wiki</a></li>
+										<li><a href="td_user.html">Users</a></li>
+										<li><a href="td_suggestion.html">Suggestion Posts Analysis</a></li>
+										
+									</ul>
+								</li>
+								<li>
+									<a href="#">New Site Google Analytics</a>
+									<ul>
+										<li><a href="ga_overview.html">Overview</a></li>
+										<li><a href="ga_traffic.html">Website Traffic</a>
+											
+										</li>
+										
+										<li><a href="ga_search.html">Internal Search Queries</a></li>
+										<li>
+											<a href="ga_location.html">User</a>
+											
+										</li>
+										<li><a href="ga_acquition.html">Acquisition</a></li>
+										<li><a href="ga_behavior.html">Behavior</a></li>
+										
+									</ul>
+								</li>
+								
+								
+								<li class="break"><a href="killer_app.html">Killer APP</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<!--<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+							</ul>
+						</nav>
+					</div>
+				</div>
+				
+
+				
+
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+
+						<!-- Content -->
+							<article id="content">
+								<header>
+									<h2>Website Engagement</h2>
+									<p>How members engage in the website - data from the COPA database retrieved in Sep. 2019. </p>
+								</header>
+								<p>We explored the engagement of COPA members by analysis the page views and replies. For interest, we also 
+									analyzed whether posts with questions would generate more discussions. 
+								</p>
+								<a href="#" class="image featured"><img src="images/engage.png" alt="" /></a>
+								<p>In the database, the whole COPA forum posts were viewed by COPA members about 66M+ times. There are about 1M+ replies 
+									to those posts. On average, for every 100 times post views, people would reply about 1~2 posts. Compared to the replies, 
+									'like' function was not very popular on the COPA website. Not many people used 'like' to evaluate the post, so there are only 
+									22K 'likes' in total. Also, the 'like' function is not available before 2013, so most posts created before that that do not have
+									'like' now. Thus, in our model, although 'like' would be a good metric to measure the quality of the content, we did not use
+									it at the end.
+								</p>
+								<p>As we explored in the historical traffic session, between 2017 and 2018, COPA members seemed to view more posts than usual. During 
+									the same period, the number of visitors and the number of new posts were not increasing abnormally. One potential reason would be 
+									the event happened during that time, according to Gordon. To boost COPA members' engagement and construct a more active community, 
+									the COPA management team could hold similar events in the future.
+								</p>
+								<p>When COPA members like to visit the website? Based on the data we have, from Aug. 2019 to Oct. 2019, most post view records were created
+									from 12 PM to 3 AM. Wednesday is very special since the color (total views) is much lighter than others. Such analysis suggests that 
+									if the COPA management team wants to post some important announcements on the website and wants more reactions from COPA members, 6 PM to 12 AM
+									would be a good time. 
+								</p>
+								<p>Whether posts with questions would attract more replies? Usually, we think people tend to answer others' questions, so posts with questions would
+									have more replies. From the data, we found there is about 49% of posts contain questions (determined by 
+									the question mark - '?'). By adding the average line and confidence interval to the chart, we found that question posts have fewer replies than posts 
+									without question. 
+								</p>
+								<h3><strong>Reference/Mention</strong></h3>
+
+								<p>Regarding Google's PageRank algorithm, we also want to leverage the reference between posts to measure the quality of the post and use this metric 
+									in our search result re-ranking model. The dashboard shown below presents the most popular posts in forum, wiki, and blog that referred by others. 
+									Although this is a good metric, there are not many COPA members cite others' posts (the top forum post has been mentioned only 4 times). Also, except the 
+									wiki posts, mentioned by other posts does not mean the post would be viewed by others more. Thus, we also did not use this metric in our final model. 
+								<p>
+									<div class='tableauPlaceholder' id='viz1587459834367' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;En&#47;Engagement-3&#47;Engagement-3&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Engagement-3&#47;Engagement-3' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;En&#47;Engagement-3&#47;Engagement-3&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587459834367');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='954px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='954px';} else { vizElement.style.width='100%';vizElement.style.height='1377px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								</p>
+								
+								<p>    </p>
+								
+								<ul class="nextpage">
+									<li><a href="td_forum.html" class="button">Next: Forum, Blog, Wiki</a></li>
+								</ul>
+								
+							
+									
+								
+							</article>
+
+						<!--<div class="row features">
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper first">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+						</div>-->
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<div id="footer" class="container">
+					<header class="major">
+						<h2>Contact Us</h2>
+						<p>Please feel free to contact us for more information.</p>
+					</header>
+					<!--<div class="row">-->
+						<section class="col-6 col-12-narrower">
+							<form method="post" action="mailto:xkzzhang@ucdavis.edu">
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobile">
+										<input name="name" placeholder="Name" type="text" />
+									</div>
+									<div class="col-6 col-12-mobile">
+										<input name="email" placeholder="Email" type="text" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+						<!--<section class="col-6 col-12-narrower">
+							<div class="row gtr-0">
+								<ul class="divided icons col-6 col-12-mobile">
+									<li class="icon brands fa-twitter"><a href="#"><span class="extra">twitter.com/</span>untitled</a></li>
+									<li class="icon brands fa-facebook-f"><a href="#"><span class="extra">facebook.com/</span>untitled</a></li>
+									<li class="icon brands fa-dribbble"><a href="#"><span class="extra">dribbble.com/</span>untitled</a></li>
+								</ul>
+								<ul class="divided icons col-6 col-12-mobile">
+									<li class="icon brands fa-instagram"><a href="#"><span class="extra">instagram.com/</span>untitled</a></li>
+									<li class="icon brands fa-youtube"><a href="#"><span class="extra">youtube.com/</span>untitled</a></li>
+									<li class="icon brands fa-pinterest"><a href="#"><span class="extra">pinterest.com/</span>untitled</a></li>
+								</ul>
+							</div>
+						</section>-->
+					<!--</div>-->
+				</div>
+				<div id="copyright" class="container">
+					<ul class="menu">
+						<li>&copy; COPA Initialtive Team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<p>Data Source: Cirrus Owners & Pilots Association (COPA)</p>
+						<P><img src="images/logo.png" alt="" width="50" height="50"/></P>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+		
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
