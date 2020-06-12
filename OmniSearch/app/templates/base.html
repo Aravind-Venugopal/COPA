@@ -79,12 +79,12 @@
     <div class="headernav">
       <div class="container">
         <div class="row">
-          <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2 logo "><a href="/"><img src="{{ url_for('static', filename='images/copa_name_logo.png') }}" alt="" style="height: 65px;"/></a></div>
+          <div class="col-lg-1 col-xs-3 col-sm-2 col-md-2 logo "><a href="/"><img src="{{ url_for('static', filename='images/copa_name_logo.png') }}" alt="" style="height: 65px;" /></a></div>
 
           <div class="col-lg-8 search hidden-xs hidden-sm col-md-6">
             <div class="wrap">
               <form method="GET" action="{{ '/COPAForum?' }}" class="form">
-                <div class="pull-left txt"><input id="query_string" type="text" name="q" class="form-control" placeholder="{{ search_string }}"></input></div>
+                <div class="pull-left txt"><input id="query_string" type="text" name="q" class="form-control" placeholder="Type your search here" value="{{ search_string }}"></input></div>
                 <div class="pull-right"><button class="btn btn-default"><i class="fa fa-search"></i></button></div>
                 <div class="clearfix"></div>
               </form>
@@ -101,7 +101,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-lg-1 col-xs-3 col-sm-2 logo "><a href="#"><img src="{{ url_for('static', filename='images/copa_name_logo.png') }}" alt="" style="height: 65px;"/></a></div>
+          <div class="col-lg-1 col-xs-3 col-sm-2 logo "><a href="#"><img src="{{ url_for('static', filename='images/copa_name_logo.png') }}" alt="" style="height: 65px;" /></a></div>
           <div class="col-lg-8 col-xs-9 col-sm-5 ">Copyright 2020, Developed by UC Davis MSBA Practicum Team for COPA</div>
           <div class="col-lg-3 col-xs-12 col-sm-5 sociconcent">
             <ul class="socialicons">

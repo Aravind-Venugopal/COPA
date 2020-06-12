@@ -7,17 +7,14 @@ from fuzzywuzzy import process
 
 from app import app
 
-selection = {'COPA': 'COPA Forum',
-            'WikiBlog': 'Wiki and Blog',
-            'Magazine': 'Magazine',
-            'Youtube': 'COPA YouTube',
-            'AVWeb': 'AV Web'}
+selection = {'/COPAForum': 'COPA Forum',
+            '/COPAWikiBlog': 'COPA Wiki and Blog',
+            '/COPAMagazine': 'COPA Magazine',
+            '/COPAYouTube': 'COPA YouTube',
+            '/AVWeb': 'AV Web',
+            '/ASRS': 'ASRS'}
 
-headers = {
-'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
-'content-type': "application/json",
-'accept': "application/json"
-}
+
 
 yt = pd.read_csv('COPAYoutubeData.csv').iloc[:,1:]
 yt.fillna('', inplace=True)
@@ -28,27 +25,18 @@ search_string = ''
 
 @app.route('/',  methods=['POST', 'GET'])
 def index():
-    selected_item = 'COPA'
-    selected = selection[selected_item]
-    data = []
-    if request.method == 'POST':
-        search_string = request.form['search_string']
-        # selected_item = request.form['selection']
-        data = fetch_from_source(selected_item, search_string)
-    elif request.method == 'GET':
-        search_string = request.args.get('q')
-        selected_item = request.args.get('selection')
-        if selected_item is not None:
-            selected = selection[selected_item]
-            data = fetch_from_source(selected_item, search_string)
-
-    return render_template("index.html", len = len(data), data=data, selection=selected, selected_item=selected_item)
+    return render_template("index.html")
 
 
 @app.route('/ASRS/<acn>')
 def get_asrs_report(acn):
     data = fetch_asrs_results(acn)
     return render_template("asrs_report.html", data=data, acn=acn)
+
+@app.route('/WikiBlog/<source_id>')
+def get_wikiblog_report(source_id):
+    data = fetch_wikiblog_results(source_id)
+    return render_template("wiki_blog_details.html", data=data, source_id=source_id)
 
 @app.route('/COPAForum', methods=['GET'])
 def search_copa():
@@ -79,7 +67,7 @@ def search_wikiblog():
         error_message = 'There are no search results'
         return render_template("error.html", error_message = error_message, search_string= search_string)
     else:
-        return render_template("wikiblog.html", len = len(data), data=data, search_string= search_string)
+        return render_template("wikiblog.html", len = len(data['hits']['hit']), data=data, search_string= search_string)
 
 @app.route('/COPAYouTube', methods=['GET'])
 def search_youtube():
@@ -104,7 +92,7 @@ def search_magazine():
         error_message = 'There are no search results'
         return render_template("error.html", error_message = error_message, search_string= search_string)
     else:
-        return render_template("magazine.html", len = len(data), data=data, search_string= search_string)
+        return render_template("magazine.html", len = len(data['hits']['hit']), data=data, search_string= search_string)
 
 
 @app.route('/AVWeb', methods=['GET'])
@@ -138,7 +126,7 @@ def search_asrs():
     else:
         return render_template("asrs.html", len = len(data), data=data, search_string= search_string)
 
-    
+
 @app.route('/about')
 def about():
     return render_template("about.html")
@@ -168,22 +156,37 @@ def fetch_youtube_results(searchterm):
     # searchterm = request.args.get('searchterm')
     matches = [a for a,b in process.extract(searchterm,yt['title'].tolist())]
     results = yt.loc[yt['title'].isin(matches)]
-    return results.to_json(orient='records')
+    return results.reset_index(drop=True).T.to_dict()
 
 def fetch_wikiblog_results(searchterm):
+    headers = {
+    'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+    'content-type': "application/json",
+    'accept': "application/json"
+    }
     url = 'http://search-wikiblog-gv65dajcbf5dxrsdwwrjyogvnm.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm}, stream=True, headers=headers)
     return res.json()
 
 def fetch_magazine_results(searchterm):
+    headers = {
+    'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+    'content-type': "application/json",
+    'accept': "application/json"
+    }
     url = 'http://search-magazine-0528-xptjf5ccnkrzhnoaju6w4nhw54.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm}, stream=True, headers=headers)
+    # print(len(res.json()))
     return res.json()
 
 def fetch_asrs_results(searchterm):
-    # searchterm = 'cirrus' + searchterm
+    headers = {
+    'user-agent': "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/79.0.3945.88 Safari/537.36",
+    'content-type': "application/json",
+    'accept': "application/json"
+    }
     url = 'http://search-arsr-vsmdyadzi6aefkfnlvybpi36yu.us-west-1.cloudsearch.amazonaws.com/2013-01-01/search'
-    res = requests.get(url,  params = {'q':searchterm, 'size':10}, headers=headers)
+    res = requests.get(url,  params = {'q':searchterm}, headers=headers)
     data = res.json()
     hits_count = len(data['hits']['hit'])
     complete_res = []
@@ -231,6 +234,10 @@ def get_content(field):
         content = None
     return content
 
+def get_source_name(url):
+    return selection[url]
+app.jinja_env.globals.update(get_source_name=get_source_name)
+
 def get_avatar_url(url):
     avatar_url = 'https://sjc5.discourse-cdn.com/copa/user_avatar/forum.cirruspilots.org/'
     try:
@@ -244,12 +251,9 @@ def get_avatar_url(url):
 app.jinja_env.globals.update(get_avatar_url=get_avatar_url)
 
 def blurb_highlighter(text, words):
-    '''
-    Highlight the search terms in each result blurb
-    '''
     for word in words:
-        pattern = re.compile(' '+word+' ')
-        text = word.sub('<b> '+word+' </b>', text)
+        pattern = re.compile(' '+word+' ', re.IGNORECASE)
+        text = pattern.sub('<b> '+word+' </b>', text)
     return text
 app.jinja_env.globals.update(blurb_highlighter=blurb_highlighter)
 # app.jinja_env.filters['blurb_highlighter'] = blurb_highlighter
