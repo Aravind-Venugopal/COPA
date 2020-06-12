@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Analysis of COPA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">COPA Initialtive</a></h1>
+
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li>
+									<a href="#">Old Site Historical Data</a>
+									<ul>
+										<li><a href="td_overview.html">Overview</a></li>
+										<li><a href="td_traffic.html">Historical Traffic</a>
+										</li>
+										
+										<li><a href="td_engagement.html">Engagement</a>
+											
+										</li>
+										<li><a href="td_forum.html">Forum, Blog, Wiki</a></li>
+										<li><a href="td_user.html">Users</a></li>
+										<li><a href="td_suggestion.html">Suggestion Posts Analysis</a></li>
+										
+									</ul>
+								</li>
+								<li>
+									<a href="#">New Site Google Analytics</a>
+									<ul>
+										<li><a href="ga_overview.html">Overview</a></li>
+										<li><a href="ga_traffic.html">Website Traffic</a>
+											
+										</li>
+										
+										<li><a href="ga_search.html">Internal Search Queries</a></li>
+										<li>
+											<a href="ga_location.html">User</a>
+											
+										</li>
+										<li><a href="ga_acquition.html">Acquisition</a></li>
+										<li><a href="ga_behavior.html">Behavior</a></li>
+										
+									</ul>
+								</li>
+								
+								
+								<li class="break"><a href="killer_app.html">Killer APP</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<!--<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+							</ul>
+						</nav>
+					</div>
+				</div>
+
+				
+
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+
+						<!-- Content -->
+							<article id="content">
+								<header>
+									<h2>Suggestion Posts Analysis</h2>
+									<p>Analyzing posts of the website suggestion and issue forum from the COPA database retrieved in Sep. 2019. </p>
+								</header>
+								<p>On the previous COPA website, there is a forum called 'Website Issues & Suggestions', where COPA members
+									can report some issues they met or ask for help with the website problem. Conducting an analysis on the posts
+									in this forum section could provide insights on what the members complained about. The scatter chart below has 
+									a date range filter. By moving the two ends, you can select the posts within that date range. 
+								</p>
+								<p>
+									<div class='tableauPlaceholder' id='viz1587611833196' style='position: relative'><noscript><a href='#'><img alt=' ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;S9&#47;S9KMW7RJR&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;S9KMW7RJR' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;S9&#47;S9KMW7RJR&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1587611833196');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1000px';vizElement.style.height='1027px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1000px';vizElement.style.height='1027px';} else { vizElement.style.width='100%';vizElement.style.height='1627px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+								</p>
+								
+								<p><strong>The 2013-2014 Migration</strong>: As the findings in historical traffic and forum page, if we move the date
+								range filter to 2013 Q4 - 2014 Q1, we can see that the number of posts in this forum section increased radically, and the 
+								content of those posts contained the system slow down issues and complaints about COPA 3.0. There were also many posts asking 
+								'how-to' questions and some website bugs. Recently, COPA completed its fourth migration to the Discourse platform. We can 
+								also see some posts about 'how-to' questions and complaints about the change. From there we can find that for COPA's migration, 
+								providing enough tutorial information to help with the new website adaption is very important.     </p>
+								<p>The sentiment and subjectivity bar charts on the right provide a reference about whether the posts are very negative (sentiment score
+									below 0, people are very angry or sad) and whether the expression is objective (subjectivity score less than 0.5, without very emotional words).
+									The method to get these scores is using an NLP Python library, called TextBlob, to process the text. Although judging the sentiment and 
+									subjectivity of a text is arbitrary, these scores can still provide a relevant reference. By <strong>click the bar</strong>, you can highlight 
+									the post title in the left chart.
+								</p>
+								<p>We also summarized the most frequent bigrams in this forum section. The bigrams can reflect the entity that people complain about. We can see that
+									the search_result is the top 4 entity mentioned in this forum section. This is also why we want to build up a search result re-ranking model to help 
+									COPA members find the most relevant information. </p>
+								
+								
+									<ul class="nextpage">
+										<li><a href="td_overview.html" class="button">Back to Overview</a></li>
+									</ul>
+									
+								
+							</article>
+
+						<!--<div class="row features">
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper first">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+						</div>-->
+					</div>
+				</div>
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<div id="footer" class="container">
+					<header class="major">
+						<h2>Contact Us</h2>
+						<p>Please feel free to contact us for more information.</p>
+					</header>
+					<!--<div class="row">-->
+						<section class="col-6 col-12-narrower">
+							<form method="post" action="mailto:xkzzhang@ucdavis.edu">
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobile">
+										<input name="name" placeholder="Name" type="text" />
+									</div>
+									<div class="col-6 col-12-mobile">
+										<input name="email" placeholder="Email" type="text" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+						<!--<section class="col-6 col-12-narrower">
+							<div class="row gtr-0">
+								<ul class="divided icons col-6 col-12-mobile">
+									<li class="icon brands fa-twitter"><a href="#"><span class="extra">twitter.com/</span>untitled</a></li>
+									<li class="icon brands fa-facebook-f"><a href="#"><span class="extra">facebook.com/</span>untitled</a></li>
+									<li class="icon brands fa-dribbble"><a href="#"><span class="extra">dribbble.com/</span>untitled</a></li>
+								</ul>
+								<ul class="divided icons col-6 col-12-mobile">
+									<li class="icon brands fa-instagram"><a href="#"><span class="extra">instagram.com/</span>untitled</a></li>
+									<li class="icon brands fa-youtube"><a href="#"><span class="extra">youtube.com/</span>untitled</a></li>
+									<li class="icon brands fa-pinterest"><a href="#"><span class="extra">pinterest.com/</span>untitled</a></li>
+								</ul>
+							</div>
+						</section>-->
+					<!--</div>-->
+				</div>
+				<div id="copyright" class="container">
+					<ul class="menu">
+						<li>&copy; COPA Initialtive Team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<p>Data Source: Cirrus Owners & Pilots Association (COPA)</p>
+						<P><img src="images/logo.png" alt="" width="50" height="50"/></P>
+					</ul>
+				</div>
+			</div>
+
+	</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

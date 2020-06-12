@@ -1,0 +1,245 @@
+<!DOCTYPE HTML>
+<!--
+	Telephasic by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Data Analysis of COPA</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="no-sidebar is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header-wrapper">
+					<div id="header" class="container">
+
+						<!-- Logo -->
+							<h1 id="logo"><a href="index.html">COPA Initialtive</a></h1>
+
+						<!-- Nav -->
+						<nav id="nav">
+							<ul>
+								<li>
+									<a href="#">Old Site Historical Data</a>
+									<ul>
+										<li><a href="td_overview.html">Overview</a></li>
+										<li><a href="td_traffic.html">Historical Traffic</a>
+										</li>
+										
+										<li><a href="td_engagement.html">Engagement</a>
+											
+										</li>
+										<li><a href="td_forum.html">Forum, Blog, Wiki</a></li>
+										<li><a href="td_user.html">Users</a></li>
+										<li><a href="td_suggestion.html">Suggestion Posts Analysis</a></li>
+										
+									</ul>
+								</li>
+								<li>
+									<a href="#">New Site Google Analytics</a>
+									<ul>
+										<li><a href="ga_overview.html">Overview</a></li>
+										<li><a href="ga_traffic.html">Website Traffic</a>
+											
+										</li>
+										
+										<li><a href="ga_search.html">Internal Search Queries</a></li>
+										<li>
+											<a href="ga_location.html">User</a>
+											
+										</li>
+										<li><a href="ga_acquition.html">Acquisition</a></li>
+										<li><a href="ga_behavior.html">Behavior</a></li>
+										
+									</ul>
+								</li>
+								
+								
+								<li class="break"><a href="killer_app.html">Killer APP</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<!--<li><a href="no-sidebar.html">No Sidebar</a></li>-->
+							</ul>
+						</nav>
+					</div>
+				</div>
+				
+
+				
+
+			<!-- Main -->
+				<div class="wrapper">
+					<div class="container" id="main">
+
+						<!-- Content -->
+							<article id="content">
+								<header>
+									<h2>Overview: Analysis on Archieved Data</h2>
+									<p>Analysis of historical data from the COPA database retrieved in Sep. 2019. </p>
+								</header>
+								<p> <strong>Background Information</strong>: Working on <a href="about.html">COPA Initiative  project</a>, we got COPA website's 
+									database during Dec. 2019. The database was retrieved in Sep. 2019 and contained all data the website have, including text data
+									of all forum, blog, and wiki posts. The database was used for the data analysis and model building. With the database exploration 
+									and data cleaning, we analyzed COPA website data and created a Tableau dashboard [<a href="https://drive.google.com/open?id=14GiOljUsAj9TP88Pmpa3UICMaqlLFSwR">Download</a>] 
+									in 5 dimensions: 
+									<li><a href="td_traffic.html">Historical Traffic</a>: Pageview, the number of visitors, and the retention rate.</li>
+									<li><a href="td_engagement.html">Engagement</a>: View vs. reply, engagement time, question posts, and reference.</li>
+									<li><a href="td_forum.html">Forum, Blog, Wiki</a>: forum section(category) and posts, blog posts, and wiki posts.</li>
+									<li><a href="td_user.html">Members</a>: New member vs. existed member and member characteristics.</li>
+									<li><a href="td_suggestion.html">Suggestion Posts Analysis</a>: What people suggested or complaint about.</li>
+								</p>
+								<p><strong>Analysis Purpose</strong>: This analysis and dashboard aim to provide COPA members, website administrators, and management team 
+									a comprehensive understanding of the website performance in the past. The analysis summarized the data in a high-level and hope to bring 
+									some useful findings that can help with the future improvement. 
+								</p>
+								<p><strong>Findings & Recommendations</strong>:
+									<li>According to <a href="td_traffic.html">the decreasing retention rate</a>, COPA is hard to retain members now. 
+									Learning why COPA members left and take some actions to retain COPA members are important for the organization.</li>
+									<li>Based on <a href="td_suggestion.html">the analysis of feedback from COPA members</a>, there are a lot of complaints and 
+									website issue report during the COPA 3.0 migration. Better and reliable website service, enough and helpful new website tutorials, 
+									and in-time technical and emotional support are the keys for successful migration. </li>
+									<li>Other complaints include email related issues, membership subscription guide, and search engine results. COPA can use our analysis
+										methods and dashboard for keeping monitoring  members' needs and try to satisfy them. </li>
+									<li>While the retention rate decreasing, <a href="td_user.html">there are not many new COPA members join in the organization</a>. The existing members are the major 
+										group who visited the website. 
+									</li>
+									<li>With <a href="td_forum.html">the analysis of blog and wiki posts</a>, the use of blog and wiki decreased significantly, and there are 
+									not many COPA members read or contribute to them anymore. Considering the high-quality information provided by blog and wiki, we suggest that
+									COPA can implement our Killer APP to help COPA members search for useful information which comes from both internal and external sources. </li>
+									<li>There were <a href="td_forum.html">too many forum sections (categories)</a> in COPA 3.0. Some of them, such as Cirrus Flying, GA forum, and Guest Discussion, 
+									were busy in the past but cool down in recent years. Some forum sections, like Marketplace and Airframe&Powerplant, were like take away the traffic from old popular forum sections. 
+									Reducing the number of forum sections and management the purpose of each forum section can provide COPA members with a user-friendly experience to explore the forum. </li>
+									<li>We recommend that COPA can continue conducting such ad-hoc data analysis on the website performance data and text data that contain COPA members' suggestions. Our analysis
+										can provide a reference for future studies.</li>
+									
+								</p>
+								<p>
+									<strong>Limitations</strong>: Since we created the dashboard with the local archived database, the analysis can not reflect the website's 
+									performance in realtime. However, because the new website is holding on AWS, COPA administrators have the opportunity to connect the Tableau 
+									dashboard with the database on the cloud. 
+
+								</p>
+								
+								<ul class="nextpage">
+									<li><a href="td_traffic.html" class="button">Next: Historical Traffic</a></li>
+								</ul>
+								
+							
+									
+								
+							</article>
+
+						<!--<div class="row features">
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper first">
+									<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+							<section class="col-4 col-12-narrower feature">
+								<div class="image-wrapper">
+									<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
+								</div>
+								<header>
+									<h3>Dolor sit consequat magna</h3>
+								</header>
+								<p>Lorem ipsum dolor sit amet consectetur et sed adipiscing elit. Curabitur
+								vel sem sit dolor neque semper magna lorem ipsum.</p>
+								<ul class="actions">
+									<li><a href="#" class="button">Elevate my awareness</a></li>
+								</ul>
+							</section>
+						</div>--->
+					</div>
+				</div>  
+
+			<!-- Footer -->
+			<div id="footer-wrapper">
+				<div id="footer" class="container">
+					<header class="major">
+						<h2>Contact Us</h2>
+						<p>Please feel free to contact us for more information.</p>
+					</header>
+					<!--<div class="row">-->
+						<section class="col-6 col-12-narrower">
+							<form method="post" action="mailto:xkzzhang@ucdavis.edu">
+								<div class="row gtr-50">
+									<div class="col-6 col-12-mobile">
+										<input name="name" placeholder="Name" type="text" />
+									</div>
+									<div class="col-6 col-12-mobile">
+										<input name="email" placeholder="Email" type="text" />
+									</div>
+									<div class="col-12">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="col-12">
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" /></li>
+											<li><input type="reset" value="Clear form" /></li>
+										</ul>
+									</div>
+								</div>
+							</form>
+						</section>
+						<!--<section class="col-6 col-12-narrower">
+							<div class="row gtr-0">
+								<ul class="divided icons col-6 col-12-mobile">
+									<li class="icon brands fa-twitter"><a href="#"><span class="extra">twitter.com/</span>untitled</a></li>
+									<li class="icon brands fa-facebook-f"><a href="#"><span class="extra">facebook.com/</span>untitled</a></li>
+									<li class="icon brands fa-dribbble"><a href="#"><span class="extra">dribbble.com/</span>untitled</a></li>
+								</ul>
+								<ul class="divided icons col-6 col-12-mobile">
+									<li class="icon brands fa-instagram"><a href="#"><span class="extra">instagram.com/</span>untitled</a></li>
+									<li class="icon brands fa-youtube"><a href="#"><span class="extra">youtube.com/</span>untitled</a></li>
+									<li class="icon brands fa-pinterest"><a href="#"><span class="extra">pinterest.com/</span>untitled</a></li>
+								</ul>
+							</div>
+						</section>-->
+					<!--</div>-->
+				</div>
+				<div id="copyright" class="container">
+					<ul class="menu">
+						<li>&copy; COPA Initialtive Team. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<p>Data Source: Cirrus Owners & Pilots Association (COPA)</p>
+						<P><img src="images/logo.png" alt="" width="50" height="50"/></P>
+					</ul>
+				</div>
+			</div>
+
+	</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.dropotron.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
