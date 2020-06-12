@@ -25,20 +25,6 @@ search_string = ''
 
 @app.route('/',  methods=['POST', 'GET'])
 def index():
-    # selected_item = '/COPAForum'
-    # selected = selection[selected_item]
-    # data = []
-    # if request.method == 'POST':
-        # search_string = request.form['search_string']
-        # selected_item = request.form['selection']
-    #     data = fetch_from_source(selected_item, search_string)
-    # elif request.method == 'GET':
-    #     search_string = request.args.get('q')
-    #     selected_item = request.args.get('selection')
-    #     if selected_item is not None:
-    #         selected = selection[selected_item]
-    #         data = fetch_from_source(selected_item, search_string)
-
     return render_template("index.html")
 
 
