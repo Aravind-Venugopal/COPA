@@ -4,7 +4,7 @@ This folder contains all the files for the COPA OmniSearch Platform
 
 ## Contributing
 
-This project is specifically developed for Cirrus Owners and Pilots Association.
+This project is specifically developed for Cirrus Owners and Pilots Association. 
 
 ## Getting Started
 
